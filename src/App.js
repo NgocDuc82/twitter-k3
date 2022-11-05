@@ -1,13 +1,27 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import routes from "./routes/routes";
+import { DefaultLayout } from './layouts/DefaultLayout'
+
 function App() {
   return (
-    <div className="App">
-        <Router>
-          <Routes>
-             <Route name="" path="/" elements={''} />
-          </Routes>
-        </Router>
-    </div>
+    <Router>
+      <div className="App">
+        <Routes>
+          {routes.map((route, key) => {
+            let Layout = DefaultLayout;
+            if (route.layout) {
+              Layout = route.layout;
+            }
+            return <Route path={route.path} element={
+              <Layout >
+                <route.element />
+              </Layout>
+            } key={key} />
+
+          })}
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
