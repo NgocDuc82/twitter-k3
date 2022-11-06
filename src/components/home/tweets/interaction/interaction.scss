@@ -1,0 +1,46 @@
+.interaction {
+  .interaction-list {
+    display: flex;
+    justify-content: space-between;
+    max-width: 84%;
+    .interaction-item {
+      display: flex;
+      text-align: center;
+
+      align-items: center;
+
+      color: rgb(83, 100, 113);
+      .icon {
+        padding: 6px;
+      }
+      svg {
+        margin-top: 2px;
+        margin-right: 8px;
+        font-size: 16px;
+      }
+    }
+    .Reply {
+      &:hover {
+        color: rgb(29, 155, 240);
+      }
+      &:hover .icon {
+        background: rgba(29, 155, 240, 0.1);
+      }
+    }
+    .ReTweet {
+      &:hover {
+        color: rgb(0, 186, 124);
+      }
+    }
+    .Like {
+      &:hover {
+        color: rgb(249, 24, 128);
+      }
+    }
+    .Share {
+      &:hover {
+        color: rgb(29, 155, 240);
+      }
+    }
+  }
+}

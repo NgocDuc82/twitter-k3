@@ -1,10 +1,10 @@
 import React from 'react'
-import { CameraOutlined } from '@ant-design/icons';
+import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 // import DateRangeOutlinedIcon from '@mui/icons-material/DateRangeOutlined';s
 export default function dateTime() {
   return (
     <div className="dateTime">
-        <CameraOutlined />
+        <CalendarMonthIcon />
     </div>
   )
 }

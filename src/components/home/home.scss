@@ -6,5 +6,8 @@
   }
   .home-wrap-tweets {
     padding: 0 16px;
+    &:hover {
+      background-color: #f7f9f9;
+    }
   }
 }

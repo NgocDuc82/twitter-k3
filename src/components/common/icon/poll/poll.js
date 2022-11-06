@@ -1,10 +1,10 @@
 import React from 'react'
-import { CameraOutlined } from '@ant-design/icons';
+import MenuIcon from '@mui/icons-material/Menu';
 
 export default function poll() {
   return (
     <div className="poll">
-        <CameraOutlined />
+        <MenuIcon />
     </div>
   )
 }

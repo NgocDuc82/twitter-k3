@@ -1,11 +1,11 @@
 import React from 'react'
-import { CameraOutlined } from '@ant-design/icons';
+import SentimentSatisfiedAltIcon from '@mui/icons-material/SentimentSatisfiedAlt';
 
 // import SentimentSatisfiedOutlinedIcon from '@mui/icons-material/SentimentSatisfiedOutlined';
 export default function emoji() {
   return (
     <div className="emoji">
-        <CameraOutlined />
+        <SentimentSatisfiedAltIcon />
     </div>
   )
 }

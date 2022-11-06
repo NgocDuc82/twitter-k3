@@ -6,6 +6,8 @@ import TimeTweet from "./tweetTime/tweetTime";
 import Grid from "@mui/material/Grid";
 import Content from "./content/content";
 import Interaction from "./interaction/interaction";
+import Menu from "./menu/menu";
+
 export default function Tweets() {
   return (
     <div className="Tweets">
@@ -15,8 +17,13 @@ export default function Tweets() {
         </Grid>
         <Grid item xs={10} className="tweet-right">
           <div className="auth">
-            <NameAuth />
-            <TimeTweet />
+            <div className="auth-left">
+              <NameAuth />
+              <TimeTweet />
+            </div>
+            <div className="auth-right">
+              <Menu />
+            </div>
           </div>
           <div className="content">
             <Content />

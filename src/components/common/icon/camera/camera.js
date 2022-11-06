@@ -1,9 +1,9 @@
 import React from 'react'
-import { CameraOutlined } from '@ant-design/icons';
+import CameraAltIcon from '@mui/icons-material/CameraAlt';
 export default function camera() {
   return (
     <div className="camera">
-        <CameraOutlined />
+        <CameraAltIcon />
     </div>
   )
 }
