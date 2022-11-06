@@ -1,0 +1,59 @@
+// *{
+//     box-sizing: border-box;
+//     margin: 0;
+// }
+
+.Trending{
+    width: 100%;
+    margin-top: 4%;
+    .Trending-wrapper{
+        width: 100%;
+        .Trending-form{
+            margin-left: 3%;
+            background-color: #ccc;
+            border-top: 1px solid #ccc;
+            border-radius: 9px;
+            width: 25%;
+            .Trending-header{
+                font-size: 20px;
+                font-weight: bold;
+                padding: 0 0 0 4%;
+            }
+            .Trending-content{
+                margin: 3% 0;
+                display: flex;
+                .Trend{
+                    width: 90%;
+                        p{
+                            margin:0 0 0 5%
+                            
+                        }
+                        .Trending-address{
+                            color: #536471;
+                        }
+                        .Trending-title{
+                            font-size:15px;
+                            font-weight: bold;
+                            color: #0F1419;
+                        }
+                        .Trending-view{
+                            color: #536471;
+                            padding-bottom: 4%;
+                        }
+                }
+                .seeMore{
+                   
+                   .btn-seemore{
+                            font-size: 29px;
+                            margin-top: -80%;
+                   }
+                }
+            }
+            .pages{
+                padding:0 0 2% 5% ;
+                color: #1d9bf0
+            }
+        }
+    }
+    
+}
