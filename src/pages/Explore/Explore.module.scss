@@ -1,0 +1,10 @@
+.explore {
+    width: 100%;
+    display: flex;
+    &__content {
+        width: 598px;
+    }
+    &__wrapper {
+        border: 1px solid rgba(185, 202, 211, 0.323);
+    }
+}
