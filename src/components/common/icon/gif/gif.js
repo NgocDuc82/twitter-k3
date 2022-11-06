@@ -1,9 +1,10 @@
 import React from 'react'
-import GifBoxOutlinedIcon from '@mui/icons-material/GifBoxOutlined';
+import { CameraOutlined } from '@ant-design/icons';
+
 export default function Gif() {
   return (
     <div className="gif">
-        <GifBoxOutlinedIcon />
+        <CameraOutlined />
     </div>
   )
 }

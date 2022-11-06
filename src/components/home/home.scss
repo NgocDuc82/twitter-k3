@@ -1,3 +1,10 @@
 .home {
-    max-width: 600px;
+  max-width: 600px;
+  margin: auto;
+  .home-wrap-status {
+    padding: 0 16px;
+  }
+  .home-wrap-tweets {
+    padding: 0 16px;
+  }
 }
