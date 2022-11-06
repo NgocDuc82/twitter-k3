@@ -1,0 +1,81 @@
+.Suggest{
+    width: 100%;
+    margin-top: 1%;
+    .Suggest-wrapper{
+        width: 100%;
+        .Suggest-form{
+            margin-left: 3%;
+            background-color: #ccc;
+            border-top: 1px solid #ccc;
+            border-radius: 9px;
+            width: 25%;
+            .Suggest-header{
+                font-size: 20px;
+                font-weight: bold;
+                padding: 0 0 0 4%;
+            }
+
+            .Suggest-content{
+                margin: 3% 0;
+                display: flex;
+                .Suggest{
+                    display: flex;
+                    justify-content:space-around;
+                    .Suggest-img{
+                        .img-1{
+                            height: 50px;
+                            width: 50px;
+                            border-radius:50%;
+                            border: 1px solid rgba(188, 132, 132, 0.748);
+                        }
+                    }
+                    .Suggest-text{
+                        margin: -5% 18% 0% -5%;
+                        .Suggest-des{
+                            margin-top:39%;
+                            padding-bottom: 8%;
+                            display: flex;
+                            .Suggest-name{
+                                margin: 0;
+                                line-height:16px;
+                            }
+                            .Suggest-img{
+                                margin-left: 7%;
+                                
+                                .img-check{
+                                    height: 16px;
+                                    border-radius:100%;
+                                }
+                            }
+                        }
+                        .Suggest-tagname{
+                            margin:0;
+                            line-height:16px
+                        }
+        
+                    }
+                    .follow{
+                        height: 65%;
+                        background-color: #000;
+                        text-align: center;
+                        padding: 3% 8% 0% 8%;
+                        border-radius: 22px;
+                        .btn-follow{
+                            color: #fff;
+                            font-size: 20px;
+                            font-weight: bold;
+                            line-height:20px;
+
+                        }
+                    }
+
+                }
+            }
+
+            .pages{
+                padding:5% 0 2% 5% ;
+                color: #1d9bf0
+            }
+        }
+    }
+}
