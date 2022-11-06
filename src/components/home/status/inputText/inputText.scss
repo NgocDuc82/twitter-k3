@@ -1,0 +1,15 @@
+.inputText {
+    margin: 24px 0;
+    text-align: center;
+    input {
+    border: none ;
+    height: 22px;
+    width: 100%;
+    text-align: left;
+    &::placeholder {
+        font-size: 22px;
+        color: rgba(83 , 100, 113,1);
+    }
+    }
+   
+}
