@@ -1,5 +1,8 @@
 .interaction {
+  margin: 10px 0;
   .interaction-list {
+    margin: 0;
+    padding: 0;
     display: flex;
     justify-content: space-between;
     max-width: 84%;
@@ -11,35 +14,48 @@
 
       color: rgb(83, 100, 113);
       .icon {
-        padding: 6px;
+        // margin-top: 4px;
+        padding: 8px 8px 4px 8px;
+        // text-align: center;
       }
       svg {
-        margin-top: 2px;
-        margin-right: 8px;
         font-size: 16px;
       }
     }
     .Reply {
       &:hover {
         color: rgb(29, 155, 240);
-      }
-      &:hover .icon {
-        background: rgba(29, 155, 240, 0.1);
+        .icon {
+          background: rgba(29, 155, 240, 0.1);
+          border-radius: 50%;
+        }
       }
     }
     .ReTweet {
       &:hover {
         color: rgb(0, 186, 124);
+        .icon {
+          background: rgba(0, 186, 124, 0.1);
+          border-radius: 50%;
+        }
       }
     }
     .Like {
       &:hover {
         color: rgb(249, 24, 128);
+        .icon {
+          background: rgba(249, 24, 128, 0.1);
+          border-radius: 50%;
+        }
       }
     }
     .Share {
       &:hover {
         color: rgb(29, 155, 240);
+        .icon {
+          background: rgba(29, 155, 240, 0.1);
+          border-radius: 50%;
+        }
       }
     }
   }
