@@ -22,7 +22,13 @@
             }
         }
         .menu{
-            width: 30px;
+            padding: 5px 5px 1px 5px;
+            &:hover{
+                background-color: rgb(201, 200, 200);
+                
+                border-radius: 50px;
+                
+            }
         }
     }
 }
