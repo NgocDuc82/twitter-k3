@@ -1,4 +1,4 @@
-import {dataTrend } from '../Mocks/mockTrend'
+import {dataTrend } from '../mocks/mockTrend'
 
 
 export const getDataTrending = () => {

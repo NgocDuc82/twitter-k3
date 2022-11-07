@@ -1,14 +1,15 @@
 .Suggest{
-    width: 100%;
-    margin-top: 1%;
+    
+    padding-top: 15%;
     .Suggest-wrapper{
-        width: 100%;
+       
         .Suggest-form{
-            margin-left: 3%;
+            max-width:402px;
+            margin-left: 40%;
             background-color: #ccc;
             border-top: 1px solid #ccc;
             border-radius: 9px;
-            width: 25%;
+            width: 208%;
             .Suggest-header{
                 font-size: 20px;
                 font-weight: bold;
@@ -16,8 +17,10 @@
             }
 
             .Suggest-content{
-                margin: 3% 0;
-                display: flex;
+                 &:hover{
+                    background-color: rgba(255, 255, 255, 0.758);
+                    cursor: pointer;
+                }
                 .Suggest{
                     display: flex;
                     justify-content:space-around;
@@ -40,7 +43,7 @@
                                 line-height:16px;
                             }
                             .Suggest-img{
-                                margin-left: 7%;
+                                margin-left: 4%;
                                 
                                 .img-check{
                                     height: 16px;
@@ -55,17 +58,21 @@
         
                     }
                     .follow{
-                        height: 65%;
+                        height: 28px;
                         background-color: #000;
                         text-align: center;
-                        padding: 3% 8% 0% 8%;
+                        padding: 0 2% 3% 2%;
                         border-radius: 22px;
                         .btn-follow{
                             color: #fff;
-                            font-size: 20px;
-                            font-weight: bold;
-                            line-height:20px;
+                            // font-size: 20px;
+                            // font-weight: bold;
+                            // line-height:20px;
 
+                        }
+                        .btn-following{
+                             color: #fff;
+                             font-size: 15px;
                         }
                     }
 

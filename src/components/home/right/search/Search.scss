@@ -3,19 +3,21 @@
 .search{
     top: 0;
     position: fixed; 
-    width: 100%;
+    width: 84%;
     margin-top: 0.5%;
+    z-index: 1;
     
     .search-wrap{
         .search-description{
-            margin-left: 3%;
-            width: 25%;
-            height: 40px;
+            margin-left: 7%;
+            width: 28%;
+            height: 44px;
             background-color: #ccc;
-            display:flex;
-            line-height:40px;
-            border-radius:25px;
+            display: flex;
+            line-height: 40px;
+            border-radius: 25px;
             .search-button{
+                padding-top: 1%;
                 #search-btn{
                     padding-left: 100%;
                     font-size: 20px
