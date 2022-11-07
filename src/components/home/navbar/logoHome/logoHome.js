@@ -1,10 +1,14 @@
 import React from 'react';
-import logo from "../../../common/img/twitter.png"
+import TwitterIcon from '@mui/icons-material/Twitter';
 import './logoHome.scss'
 const logoHome = () => {
     return (
         <div className="logo">
-                <img className='logo2' src={logo}/>
+            <div className="Reply">
+                <div className="icon">
+                    <TwitterIcon/>
+                </div>
+            </div>
         </div>
     );
 }

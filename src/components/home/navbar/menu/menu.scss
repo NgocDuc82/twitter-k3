@@ -8,30 +8,99 @@
         padding: 5px;
         width: auto;
     }
-    .hv:hover{
-        border: 1px;
-        border-color: rgb(224, 224, 224);
-        background-color: rgb(224, 224, 224);
-        transition-duration: 0.2s;
-        border-radius: 9999px;
+    .div_icon{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        column-gap: 20px;
+        height: 40px;
+        padding: 5px 20px 5px 10px;
+        
     }
-.div_icon{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    column-gap: 20px;
-    height: 40px;
-}
-.icon{
-    width: 30px;
-    font-weight: 100;
-}
-.text{
-    font-weight: 600;
-    font-size: 20px;
-}
-.text1{
-    font-size: 20px;
-}
+    .svg{
+        font-size: 50px;
+    }
+    .home{
+        &:hover{
+            .div_icon{
+                background-color: rgb(224, 224, 224);
+                border-radius: 50px;
+                transition-duration: 0.2s;
+            }
+        }
+    }
+    .explore{
+        &:hover{
+            .div_icon{
+                background-color: rgb(224, 224, 224);
+                border-radius: 50px;
+                transition-duration: 0.2s;
+            }
+        }
+    }
+    .notifications{
+        &:hover{
+            .div_icon{
+                background-color: rgb(224, 224, 224);
+                border-radius: 50px;
+                transition-duration: 0.2s;
+            }
+        }
+    }
+    .messages{
+        &:hover{
+            .div_icon{
+                background-color: rgb(224, 224, 224);
+                border-radius: 50px;
+                transition-duration: 0.2s;
+            }
+        }
+    }
+    .bookmarks{
+        &:hover{
+            .div_icon{
+                background-color: rgb(224, 224, 224);
+                border-radius: 50px;
+                transition-duration: 0.2s;
+            }
+        }
+    }
+    .lists{
+        &:hover{
+            .div_icon{
+                background-color: rgb(224, 224, 224);
+                border-radius: 50px;
+                transition-duration: 0.2s;
+            }
+        }
+    }
+    .profile{
+        &:hover{
+            .div_icon{
+                background-color: rgb(224, 224, 224);
+                border-radius: 50px;
+                transition-duration: 0.2s;
+            }
+        }
+    }
+    .more{
+        &:hover{
+            .div_icon{
+                background-color: rgb(224, 224, 224);
+                border-radius: 50px;
+                transition-duration: 0.2s;
+            }
+        }
+    }
+    .icon{
+        width: 30px;
+    }
+    .text{
+        font-weight: 600;
+        font-size: 20px;
+    }
+    .text1{
+        font-size: 20px;
+    }
 
 }

@@ -10,9 +10,9 @@ export default function account() {
                 <div className='avatar'>
                     <Avatar/>
                 </div>
-                <div>
-                    <p>Phúc Lã Văn</p>
-                    <p>@Laphuc1402</p>
+                <div className='name'>
+                    <p className='name1'>Phúc Lã Văn</p>
+                    <p className='name2'>@Laphuc1402</p>
                 </div>
             </div>
             <div className='menu'>
