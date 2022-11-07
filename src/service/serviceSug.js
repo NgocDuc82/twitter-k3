@@ -1,4 +1,4 @@
-import {dataSug } from '../Mocks/mockSuggest'
+import {dataSug } from '../mocks/mockSuggest'
 
 
 export const getDataSuggest = () => {

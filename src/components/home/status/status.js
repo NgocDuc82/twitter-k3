@@ -1,4 +1,5 @@
-import React from "react";
+import React from 'react';
+// import {useState} from 'react';
 import Avatar from "../../common/avatar/avatar";
 import InputText from './inputText/inputText';
 import SelectOption from './selectOption/selectOption';
@@ -9,6 +10,7 @@ import './status.scss'
 // import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Grid";
 export default function status() {
+  // const [first, setfirst] = useState(false)
   return (
     <div className="status">
       <Grid container spacing={2} className="status-wrap">
