@@ -1,15 +1,15 @@
 .Suggest{
     
-    padding-top: 15%;
+   
     .Suggest-wrapper{
        
         .Suggest-form{
-            max-width:350px;
-            margin-left: 7%;
-            background-color: #ccc;
-            border-top: 1px solid #ccc;
+            
+           
+            background-color: rgba(0, 0, 0, 0.03);
+            border-top: 1px solid rgba(0, 0, 0, 0.03);
             border-radius: 9px;
-            width: 208%;
+            width:100%;
             .Suggest-header{
                 font-size: 20px;
                 font-weight: bold;
@@ -18,12 +18,13 @@
 
             .Suggest-content{
                  &:hover{
-                    background-color: rgba(255, 255, 255, 0.758);
+                    background-color: rgba(204, 204, 204, 0.696);
                     cursor: pointer;
                 }
                 .Suggest{
                     display: flex;
                     justify-content:space-around;
+                    padding: 6% 0;
                     .Suggest-img{
                         .img-1{
                             height: 50px;
@@ -65,15 +66,29 @@
                         border-radius: 22px;
                         .btn-follow{
                             color: #fff;
-                            // font-size: 20px;
-                            // font-weight: bold;
-                            // line-height:20px;
+                            
+                            text-transform:capitalize;
+                            font-size: 14px;
+                             font-weight: 600;;
+
 
                         }
                         .btn-following{
                              color: #fff;
-                             font-size: 15px;
+                             font-size: 14px;
+                             font-weight: 600;
+                             text-transform:capitalize;
                         }
+                    }
+                    .modal-unfollow{
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        
+                    }
+                    .modal-unfollow-close {
+                        display: none;
                     }
 
                 }

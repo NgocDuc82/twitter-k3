@@ -11,6 +11,9 @@ import Button from '@mui/material/Button';
 export default function Suggest() {
    const [sugData, setSugData] = useState([]);
    const [checkButton,setCheckButton] = useState(true);
+   const [open,setOpen] = useState(false);
+//    const [follow,setFollow] = useState('follow')
+
         useEffect(() => {
             const getData = async () => {
             const data = await getDataSuggest();
@@ -20,11 +23,18 @@ export default function Suggest() {
             getData();
         }, []);
     
-        const  handleButtonFollow = () => {
-            setCheckButton(false);
+        const  handleButtonFollow = (key) => {
+            
+            sugData[key].sugBoolean = true
+           
+            setSugData([...sugData]);
         }
-        const handleButtonFollowing = () => {
-
+        const handleButtonFollowing = (key) => {
+            console.log(sugData[key]);
+            // if(sugData[key].sugBoolean==true){
+            //     setOpen(true);
+            // }
+            
         }
 
 
@@ -52,7 +62,7 @@ export default function Suggest() {
                                         </div>
                                         <p className="Suggest-tagname">{sug.sugTagName}</p>
                                     </div>
-                                    {checkButton?
+                                    {sug.sugBoolean ===false ?
                                         (
                                             <div className="follow">
                                                 <Button size="medium" className="btn-follow" onClick = {e=>handleButtonFollow(key)}>follow</Button>
@@ -64,8 +74,23 @@ export default function Suggest() {
                                                 <Button size="medium" className="btn-following" onClick = {e=>handleButtonFollowing(key)}>following</Button>
                                                 
                                             </div>
+                                            
                                         )
                                     }
+                                    <div className={open?"modal-unfollow":"modal-unfollow-close"}>
+                                        
+                                        
+                                        
+                                            <p className= "unfollow-title">Unfollow </p>
+                                            <p className= "unfollow-tagName">{sug.sugTagName} </p>
+                                            <p className= "unfollow-text">Their Tweets will no longer show up in your home timeline. You can still view their profile, unless their Tweets are protected.  </p>
+                                            <Button className= "btn-Ùnollow ">Unfollow</Button>
+                                            <Button className= "btn-cancel ">Cancel</Button>
+
+
+                                       
+                                    </div>
+                                    
                                     
                                     
                             </div>
