@@ -5,16 +5,16 @@
 
 .Trending{
     
-    margin-top: 25%;
+    
     .Trending-wrapper{
-        // width: 100%;
+        
         .Trending-form{       
-            max-width:350px;    
-            margin-left: 6%;
-            background-color: #ccc;
-            border-top: 1px solid #ccc;
+            
+            
+            background-color: rgba(0, 0, 0, 0.03);
+            border-top: 1px solid rgba(0, 0, 0, 0.03);
             border-radius: 9px;
-            width: 208%;
+            width: 100%;
             position: relative;
             .Trending-header{
                 font-size: 20px;
@@ -25,7 +25,7 @@
                 margin: 3% 0;
                 display: flex;
                 &:hover{
-                    background-color: rgba(255, 255, 255, 0.758);
+                    background-color: rgba(204, 204, 204, 0.696);
                     cursor: pointer;
 
                 }

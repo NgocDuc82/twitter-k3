@@ -9,6 +9,7 @@ export const dataSug = [
         sugIcon: Check,
         sugTagName: '@jedan',
         sugBoolean: false,
+        checkModal: false,
     },
     {
         id: uuidv4(),
@@ -17,6 +18,8 @@ export const dataSug = [
         sugIcon: Check,
         sugTagName: '@sancho',
         sugBoolean: false,
+        checkModal: false,
+
     },
     {
         id: uuidv4(),
@@ -25,5 +28,6 @@ export const dataSug = [
         sugIcon: Check,
         sugTagName: '@MUVN  ',
         sugBoolean: false,
+        checkModal: false,
     },
 ]
