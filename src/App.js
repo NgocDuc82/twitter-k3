@@ -9,6 +9,9 @@ import Home from "./pages/home/Home"
 
 function App() {
   return (
+    // <>
+    //   <Home />
+    // </>
     <Router>
       <div className="App">
         <Routes>
