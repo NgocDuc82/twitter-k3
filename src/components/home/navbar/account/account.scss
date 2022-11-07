@@ -12,9 +12,23 @@
             .avatar{
                 width: 60px;
             }
+            .name{
+                .name1{
+                    font-weight: 600;
+                }
+                .name2{
+                    color: rgb(87, 86, 86);
+                }
+            }
         }
         .menu{
-            width: 30px;
+            padding: 5px 5px 1px 5px;
+            &:hover{
+                background-color: rgb(201, 200, 200);
+                
+                border-radius: 50px;
+                
+            }
         }
     }
 }
