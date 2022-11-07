@@ -1,13 +1,20 @@
 .home {
-  max-width: 600px;
+  max-width: 750px;
   margin: auto;
-  .home-wrap-status {
-    padding: 0 16px;
-  }
-  .home-wrap-tweets {
-    padding: 0 16px;
-    &:hover {
-      background-color: #f7f9f9;
+  display: flex;
+    .content{
+      // width: 50%;
+      .home-wrap-status {
+        padding: 0 16px;
+      }
+      .home-wrap-tweets {
+        padding: 0 16px;
+        &:hover {
+          background-color: #f7f9f9;
+        }
+      }
     }
-  }
+    .right{
+      // width: 80%;
+    }
 }

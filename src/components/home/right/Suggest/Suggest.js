@@ -2,15 +2,15 @@ import React from 'react'
 import { useEffect, useState} from 'react';
 import './Suggest.scss'
 import {getDataSuggest} from '../../../../service/serviceSug'
-import sl1 from '../../../../assets/image/sl-1.png'
-import Check from '../../../../assets/image/check.jpg'
+import Modal from '@mui/material/Modal';
 
 import {CheckOutlined } from '@ant-design/icons'
-
+import Button from '@mui/material/Button';
 
 
 export default function Suggest() {
    const [sugData, setSugData] = useState([]);
+   const [checkButton,setCheckButton] = useState(true);
         useEffect(() => {
             const getData = async () => {
             const data = await getDataSuggest();
@@ -19,7 +19,16 @@ export default function Suggest() {
 
             getData();
         }, []);
-        
+    
+        const  handleButtonFollow = () => {
+            setCheckButton(false);
+        }
+        const handleButtonFollowing = () => {
+
+        }
+
+
+    
   return (
      <div className="Suggest">
        <div className="Suggest-wrapper">
@@ -43,10 +52,21 @@ export default function Suggest() {
                                         </div>
                                         <p className="Suggest-tagname">{sug.sugTagName}</p>
                                     </div>
-                                    <div className="follow">
-
-                                        <btn className="btn-follow">Follow</btn>
-                                    </div>
+                                    {checkButton?
+                                        (
+                                            <div className="follow">
+                                                <Button size="medium" className="btn-follow" onClick = {e=>handleButtonFollow(key)}>follow</Button>
+                                               
+                                            </div>
+                                        )
+                                        :(
+                                            <div className="follow ">
+                                                <Button size="medium" className="btn-following" onClick = {e=>handleButtonFollowing(key)}>following</Button>
+                                                
+                                            </div>
+                                        )
+                                    }
+                                    
                                     
                             </div>
                             
