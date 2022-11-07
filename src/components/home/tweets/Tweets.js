@@ -6,7 +6,7 @@ import TimeTweet from "./tweetTime/tweetTime";
 import Grid from "@mui/material/Grid";
 import Content from "./content/content";
 import Interaction from "./interaction/interaction";
-import Menu from "./menu/menu";
+import Menu from "../../common/button/menu/menu";
 
 export default function Tweets() {
   return (
