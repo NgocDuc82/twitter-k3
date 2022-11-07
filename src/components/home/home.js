@@ -10,6 +10,7 @@ const Home = () => {
       </div>
       <div className="home-wrap-tweets">
         <Tweets />
+
       </div>
     </div>
   );
