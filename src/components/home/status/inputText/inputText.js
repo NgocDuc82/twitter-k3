@@ -1,9 +1,12 @@
-import React from 'react'
+// import React from 'react'
 import './inputText.scss'
-export default function inputText() {
+import React ,{ useEffect, useState} from 'react';
+
+export default function inputText({handleClinkInput}) {
+  
   return (
-    <div className="inputText">
-        <input type="text" placeholder="What's happening?" />
+    <div className="inputText" onClick={handleClinkInput} >
+        <input type="text"  placeholder="What's happening?" />
     </div>
   )
 }

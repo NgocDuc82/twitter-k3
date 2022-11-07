@@ -15,16 +15,23 @@ export default function interaction() {
           <span>800</span>
         </li>
         <li className="interaction-item ReTweet">
-          <ReTweet />
+          <div className="icon">
+            <ReTweet />
+          </div>
+
           <span>1200</span>
         </li>
         <li className="interaction-item Like">
-          <Like />
+          <div className="icon">
+            <Like />
+          </div>
+
           <span>20000</span>
         </li>
         <li className="interaction-item Share">
-          <Share />
-          <span>34</span>
+          <div className="icon">
+            <Share />
+          </div>
         </li>
       </ul>
     </div>
