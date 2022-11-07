@@ -5,6 +5,9 @@ import './App.css'
 
 function App() {
   return (
+    // <>
+    //   <Home />
+    // </>
     <Router>
       <div className="App">
         <Routes>

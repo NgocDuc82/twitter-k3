@@ -4,16 +4,18 @@
 // }
 
 .Trending{
-    width: 100%;
-    margin-top: 4%;
+    
+    margin-top: 25%;
     .Trending-wrapper{
-        width: 100%;
-        .Trending-form{
-            margin-left: 3%;
+        // width: 100%;
+        .Trending-form{       
+            max-width:350px;    
+            margin-left: 6%;
             background-color: #ccc;
             border-top: 1px solid #ccc;
             border-radius: 9px;
-            width: 25%;
+            width: 208%;
+            position: relative;
             .Trending-header{
                 font-size: 20px;
                 font-weight: bold;
@@ -22,10 +24,16 @@
             .Trending-content{
                 margin: 3% 0;
                 display: flex;
+                &:hover{
+                    background-color: rgba(255, 255, 255, 0.758);
+                    cursor: pointer;
+
+                }
                 .Trend{
+                    // display:none;
                     width: 90%;
                         p{
-                            margin:0 0 0 5%
+                            margin:2% 0 0 5%
                             
                         }
                         .Trending-address{
@@ -42,13 +50,56 @@
                         }
                 }
                 .seeMore{
-                   
+                //    display:none;
+                    display: inline-block;
+                    height: 1%;
                    .btn-seemore{
                             font-size: 29px;
-                            margin-top: -80%;
+                           
                    }
+                   &:hover {
+                        background: rgba($color: rgb(107, 187, 233), $alpha: 0.3);
+                        border-radius:50%;
+                        color: #1D9bf0;
+                    }
+                }
+                .modal-seemore-open{
+                    position: absolute;
+                    background-color: #fff;
+                    margin-left: 10%;
+                    width: 80%;
+                    border-radius: 5px;
+                    box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+                    .modal-no{
+                        display:flex;
+                        align-items:center;
+                        
+                        padding-left: 10%;
+                        .modal-icon{
+                            padding-right: 5%;
+                        }
+                        &:hover{
+                            background-color: #ccc;
+                        }
+                    }
+                    .modal-yes{
+                        display:flex;
+                        align-items:center;
+                       
+                        padding-left: 10%;
+                        .modal-icon{
+                            padding-right: 5%;
+                        }
+                        &:hover{
+                            background-color: #ccc;
+                        }
+                    }
+                }
+                .modal-seemore-close{
+                    display: none;
                 }
             }
+            
             .pages{
                 padding:0 0 2% 5% ;
                 color: #1d9bf0
