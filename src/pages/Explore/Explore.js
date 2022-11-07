@@ -2,18 +2,24 @@ import classNames from 'classnames/bind'
 
 import styles from './Explore.module.scss'
 import { Banner, PopularVideos } from "../../components/explore";
+import Suggest from "../../components/home/right/Suggest/Suggest"
+import Trending from "../../components/home/right/Trending/Trending"
+import { ContentHeader } from "../../components/common/ContentHeader"
+import Search from '../../components/home/right/search/Search'
+import Button from "../../components/common/button/tweet/btnTweet"
 const cx = classNames.bind(styles)
 const Explore = () => {
     return (
         <div className={cx('explore')}>
             <div className={cx('explore__content')}>
+                <ContentHeader RightItem={Search} LeftItem={Button} />
                 <Banner />
-                <div className={cx('explore__wrapper')}>
-                    <PopularVideos />
-                </div>
+                <Trending />
+                <PopularVideos />
+
             </div>
             <div className={cx('explore__sidebar--right')}>
-
+                <Suggest />
             </div>
         </div>
     )

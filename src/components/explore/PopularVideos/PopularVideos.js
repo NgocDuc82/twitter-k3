@@ -2,6 +2,7 @@ import classNames from 'classnames/bind'
 import { MessageFilled } from '@ant-design/icons';
 
 import styles from './PopularVideos.module.scss'
+import Tweets from '../../home/tweets/Tweets'
 const PopularVideos = () => {
     const cx = classNames.bind(styles)
     return (
@@ -12,7 +13,10 @@ const PopularVideos = () => {
                 <p className={cx('videos__action')}>btn</p>
             </div>
             <div className={cx('videos__list')}>
-                {/* video item */}
+                <Tweets/>
+                <Tweets/>
+                <Tweets/>
+                <Tweets/>
             </div>
         </div>
     )

@@ -1,4 +1,5 @@
 import {Explore} from '../pages/Explore'
+import Home from '../pages/home/Home'
 
 const routes = [
     {

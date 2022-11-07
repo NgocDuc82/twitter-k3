@@ -1,0 +1,20 @@
+.status{
+    .status-wrap {
+        .avatar {
+            img {
+            
+            }
+        }
+        .status-right{
+            display:flex;
+            padding-left: 8px;
+            flex-direction: column;
+            .bottom{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                height: 60px;
+            }
+        }
+    }
+}

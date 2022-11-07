@@ -1,5 +1,7 @@
 :root {
 	--primary-color : rgb(29, 155, 240);
+	--border-color : rgba(185, 202, 211, 0.323);
+	--content-width : 598px;
 }
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
