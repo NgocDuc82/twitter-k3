@@ -1,0 +1,20 @@
+.w{
+    width: 100%;
+    .tk{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .fl1{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            column-gap: 10px;
+            .avatar{
+                width: 60px;
+            }
+        }
+        .menu{
+            width: 30px;
+        }
+    }
+}

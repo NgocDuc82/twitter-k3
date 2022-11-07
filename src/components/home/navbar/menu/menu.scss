@@ -1,0 +1,37 @@
+.cham{
+    list-style: none;
+    padding-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    .hv{
+        margin: 15px;
+        padding: 5px;
+        width: auto;
+    }
+    .hv:hover{
+        border: 1px;
+        border-color: rgb(224, 224, 224);
+        background-color: rgb(224, 224, 224);
+        transition-duration: 0.2s;
+        border-radius: 9999px;
+    }
+.div_icon{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 20px;
+    height: 40px;
+}
+.icon{
+    width: 30px;
+    font-weight: 100;
+}
+.text{
+    font-weight: 600;
+    font-size: 20px;
+}
+.text1{
+    font-size: 20px;
+}
+
+}

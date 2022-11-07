@@ -3,13 +3,13 @@
 .search{
     top: 0;
     position: fixed; 
-    width: 84%;
+    width: 81%;
     margin-top: 0.5%;
     z-index: 1;
     
     .search-wrap{
         .search-description{
-            margin-left: 7%;
+            margin-left: 2%;
             width: 28%;
             height: 44px;
             background-color: #ccc;
@@ -24,8 +24,6 @@
                 }
             }
             .search-input{
-                width: 80%;
-                padding-left: 10%;
                 #searchInput{
                     background-color: #ccc;
                     border: none;
