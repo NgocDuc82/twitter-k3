@@ -85,8 +85,4 @@ export const dataTrend = [
         trendView: '151K Tweets',
         Toggle: false,
     },
-    
-    
-    
-    
 ]
