@@ -25,6 +25,7 @@
                     display: flex;
                     justify-content:space-around;
                     padding: 6% 0;
+                    position: relative;
                     .Suggest-img{
                         .img-1{
                             height: 50px;
@@ -69,7 +70,7 @@
                             
                             text-transform:capitalize;
                             font-size: 14px;
-                             font-weight: 600;;
+                            font-weight: 600;;
 
 
                         }
@@ -85,6 +86,7 @@
                         left: 0;
                         right: 0;
                         bottom: 0;
+                       
                         
                     }
                     .modal-unfollow-close {
@@ -93,7 +95,19 @@
 
                 }
             }
-
+            // .unfollow-title{
+                
+            // }
+            // .unfollow-tagname{
+                
+            // }
+            // .unfollow-text{
+                
+            // }
+            .btn-modal{
+                display:flex;
+                flex-direction:column;
+            }
             .pages{
                 padding:5% 0 2% 5% ;
                 color: #1d9bf0
