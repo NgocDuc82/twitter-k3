@@ -54,7 +54,7 @@
                     display: inline-block;
                     height: 1%;
                    .btn-seemore{
-                            font-size: 29px;
+                            font-size: 24px;
                            
                    }
                    &:hover {
@@ -67,13 +67,14 @@
                     position: absolute;
                     background-color: #fff;
                     margin-left: 10%;
-                    width: 80%;
+                    width: 278px;
+                    height: 104px;
                     border-radius: 5px;
                     box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
                     .modal-no{
                         display:flex;
                         align-items:center;
-                        
+                        height:  50%;
                         padding-left: 10%;
                         .modal-icon{
                             padding-right: 5%;
@@ -85,7 +86,7 @@
                     .modal-yes{
                         display:flex;
                         align-items:center;
-                       
+                        height:  50%;
                         padding-left: 10%;
                         .modal-icon{
                             padding-right: 5%;

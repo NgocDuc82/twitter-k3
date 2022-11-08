@@ -18,7 +18,7 @@ const style = {
   border: 'none',
   borderRadius: '10px',
   boxShadow: 24,
-//   pt: 2,
+  pt: 2,
   px: 4,
   pb: 3,
 
@@ -26,6 +26,10 @@ const style = {
 const ButtonStyleUnfollow = {
     backgroundColor:'#000',
     color: '#fff',
+    width:'230px',
+    height:'40px',
+    borderRadius: '25px',
+    marginBottom:'10px',
     "&:hover": {
         backgroundColor:'#ccc',
         color: '#000',
@@ -33,9 +37,13 @@ const ButtonStyleUnfollow = {
 };
 
 const btnStyleCancel = {
-    marginLeft: '10px',
+   
     color: '#000',
-    width: '100px',
+    width:'230px',
+    height:'40px',
+    borderRadius: '25px',
+    marginBottom:'10px',
+    border:'1px solid #ccc',
     "&:hover": {
         backgroundColor:'#ccc',
         color: '#000',
@@ -116,12 +124,15 @@ export default function Suggest() {
                                                     <Modal
                                                         open={show}
                                                     >
-                                                                    <Box sx={{ ...style, width: 280 ,height:240,}}>
+                                                                    <Box sx={{ ...style, width: 320 ,height:300,}}>
                                                                     
-                                                                        <h1 className= "unfollow-title">Unfollow {data.sugTagName}</h1>
-                                                                        <h2 className= "unfollow-tagName"> </h2>
-                                                                        <p className= "unfollow-text">Their Tweets will no longer show up in your home timeline. You can still view their profile, unless their Tweets are protected.  </p>
-                                                                        <div  className= "btn-modal">
+                                                                        <h1 className= "unfollow-title" 
+                                                                        style={{fontWeight:'bold',fontSize:'25px',marginBottom:'10px',marginTop:'20px'}}>
+                                                                            Unfollow {data.sugTagName}
+                                                                        </h1>
+                                                                        
+                                                                        <p style = {{marginBottom:'40px',}} className= "unfollow-text">Their Tweets will no longer show up in your home timeline. You can still view their profile, unless their Tweets are protected.  </p>
+                                                                        <div style={{display:'flex',flexDirection:'column'}} className= "btn-modal">
                                                                             <Button sx = {ButtonStyleUnfollow} className= "btn-unfnollow" onClick={e => handleButtonUnfollow(index)}>Unfollow</Button>
                                                                             <Button sx ={btnStyleCancel} className= "btn-cancel " onClick={() =>setShow(false)}>Cancel</Button>
                                                                         </div>
