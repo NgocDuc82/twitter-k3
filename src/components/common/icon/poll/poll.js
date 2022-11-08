@@ -1,9 +1,10 @@
 import React from 'react'
-import MenuOutlinedIcon from '@mui/icons-material/MenuOutlined';
+import MenuIcon from '@mui/icons-material/Menu';
+
 export default function poll() {
   return (
     <div className="poll">
-        <MenuOutlinedIcon />
+        <MenuIcon />
     </div>
   )
 }

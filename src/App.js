@@ -4,6 +4,7 @@ import db from "./firebase";
 import { DefaultLayout } from "./layouts/DefaultLayout";
 import { useState, useEffect } from "react";
 import { collection, onSnapshot } from "@firebase/firestore";
+import "./App.css";
 
 function App() {
   useEffect(() => {

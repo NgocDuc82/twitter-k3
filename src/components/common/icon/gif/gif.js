@@ -1,9 +1,9 @@
 import React from 'react'
-import GifBoxOutlinedIcon from '@mui/icons-material/GifBoxOutlined';
+import GifBoxIcon from '@mui/icons-material/GifBox';
 export default function Gif() {
   return (
     <div className="gif">
-        <GifBoxOutlinedIcon />
+        <GifBoxIcon />
     </div>
   )
 }

@@ -1,7 +1,7 @@
 import classNames from 'classnames/bind'
 
 import styles from './DefaultLayout.module.scss'
-import {Sidebar} from '../components/Sidebar'
+import Navbar from '../../components/home/navbar/navbar'
 
 const DefaultLayout = ({children}) => {
     const cx = classNames.bind(styles)
@@ -9,7 +9,7 @@ const DefaultLayout = ({children}) => {
     return (
         <div className={cx("container")}>
             <div className={cx("sidebar")}>
-                <Sidebar />
+                <Navbar />
             </div>
             <div className={cx("content")}>
                 {children}

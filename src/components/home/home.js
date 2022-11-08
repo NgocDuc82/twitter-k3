@@ -1,19 +1,23 @@
 import React from "react";
-import { getTweets } from "../../service/tweets";
 import "./home.scss";
-const Home = (props) => {
-  const fetchTweets = async () => {
-    const res = await getTweets();
-    const tweets = res.docs.map((record) => record.data());
-    console.log({ tweets });
-  };
-  useEffect(() => {
-    fetchTweets();
-  }, []);
-
+import Status from "./status/status";
+import Tweets from "./tweets/Tweets";
+import Right from "./right/Right";
+const Home = () => {
   return (
     <div className="home">
-      <div className="home-wrap"></div>
+      <div className="content">
+          <div className="home-wrap-status">
+            <Status />
+          </div>
+          <div className="home-wrap-tweets">
+            <Tweets />
+          </div>
+
+      </div>
+      <div className="right">
+            <Right/>
+      </div>
     </div>
   );
 };

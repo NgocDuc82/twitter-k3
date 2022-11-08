@@ -1,0 +1,22 @@
+.logo{
+    width: 50px;
+    margin-left: 20px;
+    .icon {
+        // margin-top: 4px;
+        padding: 8px 8px 4px 8px;
+        // text-align: center;
+    }
+    svg {
+        font-size: 35px;
+        color: rgb(29, 155, 240);
+    }
+    .Reply {
+        &:hover {
+            color: rgb(29, 155, 240);
+            .icon {
+            background: rgba(29, 155, 240, 0.1);
+            border-radius: 50px;
+            }
+        }
+    }
+}

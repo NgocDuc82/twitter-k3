@@ -1,0 +1,103 @@
+.Suggest{
+    
+   
+    .Suggest-wrapper{
+       
+        .Suggest-form{
+            
+           
+            background-color: rgba(0, 0, 0, 0.03);
+            border-top: 1px solid rgba(0, 0, 0, 0.03);
+            border-radius: 9px;
+            width:100%;
+            .Suggest-header{
+                font-size: 20px;
+                font-weight: bold;
+                padding: 0 0 0 4%;
+            }
+
+            .Suggest-content{
+                 &:hover{
+                    background-color: rgba(204, 204, 204, 0.696);
+                    cursor: pointer;
+                }
+                .Suggest{
+                    display: flex;
+                    justify-content:space-around;
+                    padding: 6% 0;
+                    .Suggest-img{
+                        .img-1{
+                            height: 50px;
+                            width: 50px;
+                            border-radius:50%;
+                            border: 1px solid rgba(188, 132, 132, 0.748);
+                        }
+                    }
+                    .Suggest-text{
+                        margin: -5% 18% 0% -5%;
+                        .Suggest-des{
+                            margin-top:39%;
+                            padding-bottom: 8%;
+                            display: flex;
+                            .Suggest-name{
+                                margin: 0;
+                                line-height:16px;
+                            }
+                            .Suggest-img{
+                                margin-left: 4%;
+                                
+                                .img-check{
+                                    height: 16px;
+                                    border-radius:100%;
+                                }
+                            }
+                        }
+                        .Suggest-tagname{
+                            margin:0;
+                            line-height:16px
+                        }
+        
+                    }
+                    .follow{
+                        height: 28px;
+                        background-color: #000;
+                        text-align: center;
+                        padding: 0 2% 3% 2%;
+                        border-radius: 22px;
+                        .btn-follow{
+                            color: #fff;
+                            
+                            text-transform:capitalize;
+                            font-size: 14px;
+                             font-weight: 600;;
+
+
+                        }
+                        .btn-following{
+                             color: #fff;
+                             font-size: 14px;
+                             font-weight: 600;
+                             text-transform:capitalize;
+                        }
+                    }
+                    .modal-unfollow{
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        
+                    }
+                    .modal-unfollow-close {
+                        display: none;
+                    }
+
+                }
+            }
+
+            .pages{
+                padding:5% 0 2% 5% ;
+                color: #1d9bf0
+            }
+        }
+    }
+}

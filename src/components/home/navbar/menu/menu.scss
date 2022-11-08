@@ -1,0 +1,106 @@
+.cham{
+    list-style: none;
+    padding-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    .hv{
+        margin: 15px;
+        padding: 5px;
+        width: auto;
+    }
+    .div_icon{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        column-gap: 20px;
+        height: 40px;
+        padding: 5px 20px 5px 10px;
+        
+    }
+    .svg{
+        font-size: 50px;
+    }
+    .home{
+        &:hover{
+            .div_icon{
+                background-color: rgb(224, 224, 224);
+                border-radius: 50px;
+                transition-duration: 0.2s;
+            }
+        }
+    }
+    .explore{
+        &:hover{
+            .div_icon{
+                background-color: rgb(224, 224, 224);
+                border-radius: 50px;
+                transition-duration: 0.2s;
+            }
+        }
+    }
+    .notifications{
+        &:hover{
+            .div_icon{
+                background-color: rgb(224, 224, 224);
+                border-radius: 50px;
+                transition-duration: 0.2s;
+            }
+        }
+    }
+    .messages{
+        &:hover{
+            .div_icon{
+                background-color: rgb(224, 224, 224);
+                border-radius: 50px;
+                transition-duration: 0.2s;
+            }
+        }
+    }
+    .bookmarks{
+        &:hover{
+            .div_icon{
+                background-color: rgb(224, 224, 224);
+                border-radius: 50px;
+                transition-duration: 0.2s;
+            }
+        }
+    }
+    .lists{
+        &:hover{
+            .div_icon{
+                background-color: rgb(224, 224, 224);
+                border-radius: 50px;
+                transition-duration: 0.2s;
+            }
+        }
+    }
+    .profile{
+        &:hover{
+            .div_icon{
+                background-color: rgb(224, 224, 224);
+                border-radius: 50px;
+                transition-duration: 0.2s;
+            }
+        }
+    }
+    .more{
+        &:hover{
+            .div_icon{
+                background-color: rgb(224, 224, 224);
+                border-radius: 50px;
+                transition-duration: 0.2s;
+            }
+        }
+    }
+    .icon{
+        width: 30px;
+    }
+    .text{
+        font-weight: 600;
+        font-size: 20px;
+    }
+    .text1{
+        font-size: 20px;
+    }
+
+}
