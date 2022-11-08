@@ -55,7 +55,7 @@ const btnStyleCancel = {
 
 export default function Suggest() {
    const [sugData, setSugData] = useState([]);
-//    const [open,setOpen] = useState(false);
+   
    const [show,setShow] = useState(false);
    const [data,setData] = useState({})
 
@@ -70,19 +70,46 @@ export default function Suggest() {
         }, []);
     
         const  handleButtonFollow = (index) => {
+            console.log(index);
             sugData[index].sugBoolean = !sugData[index].sugBoolean
             setSugData([...sugData]);
         }
         const handleButtonFollowing = (index,sug) => {
+            console.log(index);
             setData(sug)
             setShow(true);  
         }
-        const handleButtonUnfollow = (index) => {          
-            sugData[index].sugBoolean=false;
-            setSugData([...sugData]);
+        const handleButtonUnfollow = (tagName,index) => {   
+            sugData.forEach(item=>{
+                    if(item.sugTagName==tagName){
+                        item.sugBoolean = false;
+                        setSugData([...sugData]);
+                    }
+            })    
             setShow(false);
         }
+        const handleMouseIn = (tagName,e) => {
+            // console.log(tagName);
+            sugData.forEach(item=>{
+                    if(item.sugTagName==tagName){
+                       
+                        item.checkHover = true;
+                        setSugData([...sugData]);
+                    }
+            }) 
+            //  e.target.style.background = 'red';
+        };
 
+        const handleMouseOut = (tagName,e) => {
+           
+             sugData.forEach(item=>{
+                    if(item.sugTagName==tagName){
+                        // e.target.style.background = '#000';
+                        item.checkHover = false;
+                        setSugData([...sugData]);
+                    }
+            }) 
+        };
     
     
   return (
@@ -116,10 +143,23 @@ export default function Suggest() {
                                             </div>
                                         )
                                         :(
-                                            <div className="follow ">
-                                                <Button size="medium" className="btn-following" onClick = {e=>handleButtonFollowing(index,sug)}>following</Button>
+                                            <div className={sug.checkHover?"follow-hover":"follow "}
+                                                onMouseOver={e =>handleMouseIn(sug.sugTagName)} 
+                                                onMouseOut={e =>handleMouseOut(sug.sugTagName)}
+                                            >
+                                                <Button 
+                                                    size="medium" 
+                                                    className="btn-following" 
+                                                    onClick = {e=>handleButtonFollowing(index,sug)}>
+                                                    {sug.checkHover?'Unfollow':'Following'}
+                                                    </Button>
                                                 
-                                                 {               
+                                                
+                                            </div>
+                                            
+                                        )
+                                    }
+                                     {               
                                                 (
                                                     <Modal
                                                         open={show}
@@ -133,17 +173,13 @@ export default function Suggest() {
                                                                         
                                                                         <p style = {{marginBottom:'40px',}} className= "unfollow-text">Their Tweets will no longer show up in your home timeline. You can still view their profile, unless their Tweets are protected.  </p>
                                                                         <div style={{display:'flex',flexDirection:'column'}} className= "btn-modal">
-                                                                            <Button sx = {ButtonStyleUnfollow} className= "btn-unfnollow" onClick={e => handleButtonUnfollow(index)}>Unfollow</Button>
+                                                                            <Button sx = {ButtonStyleUnfollow} className= "btn-unfnollow" onClick={e => handleButtonUnfollow(data.sugTagName,index)}>Unfollow</Button>
                                                                             <Button sx ={btnStyleCancel} className= "btn-cancel " onClick={() =>setShow(false)}>Cancel</Button>
                                                                         </div>
                                                                         
                                                                     </Box>
                                                         </Modal>  
                                                 )                   
-                                                }
-                                            </div>
-                                            
-                                        )
                                     }
                                     
                                    
