@@ -1,7 +1,7 @@
 import classNames from 'classnames/bind'
 
 import styles from './DefaultLayout.module.scss'
-import Navbar from '../../components/home/navbar/navbar'
+import Navbar from '../../components/home/navbar/Navbar'
 
 const DefaultLayout = ({children}) => {
     const cx = classNames.bind(styles)

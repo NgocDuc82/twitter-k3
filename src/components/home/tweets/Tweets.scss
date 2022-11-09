@@ -13,9 +13,10 @@
   }
   .tweet-wrap {
     .tweet-right {
+      padding-left: 0;
       .auth {
         display: flex;
-        margin-bottom: 10px;
+        // margin-bottom: 10px;
         justify-content: space-between;
         .auth-left {
             display: flex;
@@ -26,6 +27,7 @@
 
        
       }
+
     }
   }
 }

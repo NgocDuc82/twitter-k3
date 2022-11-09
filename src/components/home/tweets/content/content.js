@@ -3,7 +3,7 @@ import './content.scss'
 const Content = () => {
     return (
         <div>
-            <div className="text" >
+            <div className="content-text" >
                 <p>We're the United States of America. There is nothing beyond our capacity.</p>
             </div>
             <div className="img">
