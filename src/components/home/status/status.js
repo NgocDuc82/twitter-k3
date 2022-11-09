@@ -1,35 +1,40 @@
-import React, {useState} from 'react';
+import React, { useState, useEffect } from "react";
 // import {useState} from 'react';
 import Avatar from "../../common/avatar/avatar";
-import InputText from "./inputText/inputText";
+import InputText from "./inputText/InputText";
 import SelectOption from "./selectOption/selectOption";
 import BtnTweet from "../../common/button/tweet/btnTweet";
 import SelectViewMode from "./viewMode/selectViewMode/selectViewMode";
 import DisplayViewMode from "./viewMode/displayViewMode/displayViewMode";
-import { useDispatch } from "react-redux";
-import { upStatus ,UpTweet } from "./statusSlice"
+import { useDispatch,useSelector } from "react-redux";
+import {todoRemaningSelector} from '../../../redux/selector/selector'
+
+import {UpTweet, fetchlistTweet } from "./statusSlice";
 import "./status.scss";
-// import Paper from "@mui/material/Paper";
+
 import Grid from "@mui/material/Grid";
+
 export default function Status() {
-  const dispatch = useDispatch()
+  const dispatch = useDispatch();
+  const listTweet = useSelector(todoRemaningSelector);
+  console.log(listTweet);
+  useEffect(() => {
+    dispatch(fetchlistTweet());
+  },[]);
   const [isMode, setIsMode] = useState(false);
   const [infoStatus, setinfoStatus] = useState({
-    text: '',
-    photoUrl: ''
-  })
+    text: "",
+  });
   const changeInputStatus = (e) => {
-    // console.log(e.target.value);
-    setinfoStatus({text: e.target.value})
+    setinfoStatus({ text: e.target.value });
     console.log(infoStatus);
-  }
+  };
   const handleClinkInput = () => {
     setIsMode(true);
   };
   const handleBtnTweet = () => {
-    // dispatch(upStatus(infoStatus))
-    dispatch(UpTweet(infoStatus))
-  }
+    dispatch(UpTweet(infoStatus));
+  };
   return (
     <div className="status">
       <Grid container spacing={2} className="status-wrap">
@@ -38,7 +43,11 @@ export default function Status() {
         </Grid>
         <Grid item xs={10} className="status-right">
           {isMode ? <SelectViewMode /> : <> </>}
-          <InputText infoStatus={infoStatus} changeInputStatus={changeInputStatus}   handleClinkInput={handleClinkInput} />
+          <InputText
+            infoStatus={infoStatus}
+            changeInputStatus={changeInputStatus}
+            handleClinkInput={handleClinkInput}
+          />
           {isMode ? <DisplayViewMode /> : <> </>}
 
           <div className="bottom">
