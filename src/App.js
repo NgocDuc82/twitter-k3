@@ -7,6 +7,7 @@ import { collection, onSnapshot } from "@firebase/firestore";
 import "./App.css";
 
 function App() {
+  const [tweets, setTweets] = useState([{ name: "loading...", id: "initial" }]);
   useEffect(() => {
     onSnapshot(collection(db, "tweets"), (snapshot) => {
       console.log(snapshot.docs.map((doc) => doc.data()));
