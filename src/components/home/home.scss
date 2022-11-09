@@ -3,9 +3,13 @@
   display: flex;
     .content{
       flex: 5;
+      .header{
+        padding: 15px 0px 15px 0px;
+      }
       .home-wrap-status {
         padding: 0 16px;
         margin-bottom: 20px;
+        margin-top: 80px;
       }
       .home-wrap-tweets {
         padding: 0 16px;
