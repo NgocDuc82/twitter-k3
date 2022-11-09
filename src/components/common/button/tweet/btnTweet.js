@@ -1,9 +1,9 @@
 import React from 'react'
 import './btnTweet.scss'
-export default function btnTweet() {
+export default function btnTweet({handleBtnTweet}) {
   return (
     <div className="btnTweet">
-        <button>Tweet</button>
+        <button onClick={handleBtnTweet}>Tweet</button>
     </div>
   )
 }
