@@ -1,17 +1,13 @@
 .status {
   .status-wrap {
+    .avatar {
+      img {
+      }
+    }
     .status-right {
       display: flex;
       padding-left: 8px;
       flex-direction: column;
-      .list-url {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: stretch;
-        .status-img {
-          width: 50%;
-        }
-      }
       .bottom {
         display: flex;
         align-items: center;
