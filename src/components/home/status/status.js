@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 // import {useState} from 'react';
 import Avatar from "../../common/avatar/avatar";
-import InputText from "./inputText/InputText";
+import InputText from "./inputText/inputText";
 import SelectOption from "./selectOption/selectOption";
-import BtnTweet from "../../common/button/tweet/BtnTweet";
+import BtnTweet from "../../common/button/tweet/btnTweet";
 import SelectViewMode from "./viewMode/selectViewMode/selectViewMode";
 import DisplayViewMode from "./viewMode/displayViewMode/displayViewMode";
 
@@ -40,6 +40,8 @@ export default function Status() {
   const handleBtnTweet = () => {
     // dispatch 1 thuk-action
     dispatch(addNewStatus(infoStatus));
+    setIsMode(false)
+    setinfoStatus({content : ''})
   };
   return (
     <div className="status">

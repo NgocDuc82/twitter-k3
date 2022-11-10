@@ -1,14 +1,12 @@
-.right{
-    position: relative;
-    padding-left:10px;
-    .right-search{
-        position:fixed;
-       
-        top: 0;
-        z-index: 5;
-    }
-    .right-trending{
-        margin-top:20%;
-        margin-bottom:10%
-    }
+.right {
+  position: relative;
+  padding-left: 10px;
+  .right-search {
+    height: 40px;
+    // z-index: 5; 
+  }
+  .right-trending {
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
 }
