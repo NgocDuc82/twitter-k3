@@ -1,9 +1,9 @@
 import React from 'react';
 
-const TweetTime = () => {
+const TweetTime = ({data}) => {
     return (
         <span>
-            Nov 5
+            {/* {data.createAt} */}
         </span>
     );
 }

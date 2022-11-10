@@ -1,9 +1,9 @@
 .Tweets {
   padding: 20px 0;
   // border-bottom : 1px solid black;
-  position:relative;
+  position: relative;
   &::after {
-    content: '';
+    content: "";
     width: calc(100% + (35px));
     height: 1px;
     position: absolute;
@@ -12,19 +12,23 @@
     left: -18px;
   }
   .tweet-wrap {
+    &:hover {
+      background-color: #f7f9f9;
+      transition-duration: 0.2s;
+    }
     .tweet-right {
+      padding-left: 0;
       .auth {
         display: flex;
-        margin-bottom: 10px;
         justify-content: space-between;
+        margin-bottom: 5px;
         .auth-left {
-            display: flex;
+          display: flex;
+
           .nameAuth {
             margin-right: 10px;
           }
         }
-
-       
       }
     }
   }

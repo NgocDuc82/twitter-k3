@@ -1,45 +1,19 @@
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import routes from "./routes/routes";
-import db from "./firebase";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
 import { DefaultLayout } from "./layouts/DefaultLayout";
-import { useState, useEffect } from "react";
-import { collection, onSnapshot } from "@firebase/firestore";
+import Home from './pages/home/Home';
+import Explore from "./pages/Explore/Explore";
 import "./App.css";
 
 function App() {
-  const [tweets, setTweets] = useState([{ name: "loading...", id: "initial" }]);
-  useEffect(() => {
-    onSnapshot(collection(db, "tweets"), (snapshot) => {
-      console.log(snapshot.docs.map((doc) => doc.data()));
-    });
-  });
-  useEffect(() => {
-    onSnapshot(collection(db, "comment"), (snapshot) => {
-      console.log(snapshot.docs.map((doc) => doc.data()));
-    });
-  });
-
   return (
     <Router>
       <div className="App">
         <Routes>
-          {routes.map((route, key) => {
-            let Layout = DefaultLayout;
-            if (route.layout) {
-              Layout = route.layout;
-            }
-            return (
-              <Route
-                path={route.path}
-                element={
-                  <Layout>
-                    <route.element />
-                  </Layout>
-                }
-                key={key}
-              />
-            );
-          })}
+          <Route path="/" element={<DefaultLayout/>}>
+            <Route index element={<Home/>}/>
+            <Route path="explore" element={<Explore/>}/>
+          </Route>
         </Routes>
       </div>
     </Router>
