@@ -1,6 +1,7 @@
 import React , {useState} from 'react'
 import'./Search.scss'
-import {SearchOutlined } from '@ant-design/icons'
+import SearchIcon from '@mui/icons-material/Search';
+
 
 export default function Search() {
   const [dataSearch, setDataSearch] = useState(" ")
@@ -14,32 +15,23 @@ export default function Search() {
   }
   return (
      <div className="search">
-            <div className="search-wrap">
-                  <div className="search-description" id="search-description">  
-
-                    <div className="search-button">
-                        <SearchOutlined id="search-btn" />
-
-                    </div>
-                    
-                    <div className="search-input">
-
-                        <input 
-                            
-                            type="text" 
-                            className="search"
-                            placeholder='Search Twitter' 
-                            id="searchInput"
-                            // value ={dataSearch}
-                            onChange={e => handleChangeSearch(e)}
-                          />
-                    </div>
-                       
-                  </div>
-                    
-                                
-                   
-            </div>
+      <div className="search-wrap">
+        <div className="search-description" id="search-description">  
+          <div className="search-button">
+            <SearchIcon id="search-btn" />
+          </div>
+          <div className="search-input">
+            <input 
+                type="text" 
+                className="search"
+                placeholder='Search Twitter' 
+                id="searchInput"
+                // value ={dataSearch}
+                onChange={e => handleChangeSearch(e)}
+              />
+          </div>
+        </div>
+      </div>
     </div>
   )
 }

@@ -16,10 +16,11 @@
         column-gap: 20px;
         height: 40px;
         padding: 5px 20px 5px 10px;
-    }
-    .css-i4bv87-MuiSvgIcon-root{
+        .css-i4bv87-MuiSvgIcon-root{
         font-size: 2em;
+        }
     }
+    
     .home{
         &:hover{
             .div_icon{
@@ -105,9 +106,11 @@
     .text{
         font-weight: 600;
         font-size: 20px;
+        text-decoration: none;
     }
     .text1{
         font-size: 20px;
+        text-decoration: none;
     }
 
 }
