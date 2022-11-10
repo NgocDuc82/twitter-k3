@@ -1,5 +1,6 @@
 import {Explore} from '../pages/Explore'
 import Home from '../pages/home/Home'
+import DetailPage from "../pages/detailPage/DetailPage";
 const routes = [
     {
         path : 'explore',
@@ -8,6 +9,10 @@ const routes = [
     {
         path : '/',
         element :Home
+    },
+    {
+        path : 'DetailPage',
+        element : DetailPage
     }
 ]
 

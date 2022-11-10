@@ -1,0 +1,19 @@
+.inputText {
+    margin: 10px 0px;
+    text-align: center;
+    width: 80%;
+    input {
+    background-color: rgba(185, 202, 211, 0.023);
+    border: none ;
+    height: 50px;
+    width: 100%;
+    text-align: left;
+    font-size: 22px;
+    outline: none;
+    &::placeholder {
+        font-size: 22px;
+        color: rgba(83 , 100, 113,1);
+    }
+    }
+   
+}

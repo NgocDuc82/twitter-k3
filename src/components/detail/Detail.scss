@@ -1,0 +1,27 @@
+.Tweets {
+    .tweet-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .tweet-top1 {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            width: 40%;
+        }
+    }
+    .content{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .interaction1{
+        border-bottom: 1px solid rgb(239, 243, 244);
+    }
+    .stastus{
+        border-bottom: 1px solid rgb(239, 243, 244);
+    }
+    .comment{
+        margin-top: 10px;
+    }
+  }
+  

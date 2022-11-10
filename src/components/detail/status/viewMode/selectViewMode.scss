@@ -1,0 +1,24 @@
+.selectViewMode{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    column-gap: 3px;
+    font-weight: bold;
+    background-color: rgba(185, 202, 211, 0.023);
+    border:solid rgba(185, 202, 211, 0.023);
+    cursor: pointer;
+    .name1{
+        color: rgb(83, 100, 113);
+        font-size: 15px;
+        font-weight: 400;
+    }
+    .name{
+        font-size: 15px;
+        font-weight: 400;
+        color: rgb(29, 155, 240);
+    }
+    svg {
+        margin-top: 4px;
+    }
+}

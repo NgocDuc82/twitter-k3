@@ -3,22 +3,21 @@ import "./home.scss";
 import Status from "./status/status";
 import Tweets from "./tweets/Tweets";
 import Right from "./right/Right";
-import ContentHeader from "../common/ContentHeader/ContentHeader";
-import AutoAwesomeIcon from '@mui/icons-material/AutoAwesome';
+import DetailPage from "../../pages/detailPage/DetailPage";
+import { Link } from "react-router-dom";
 const Home = () => {
   return (
     <div className="home">
-      <div className="content">
+      <div className="content" >
           <div className="home-wrap-status">
                 {/* <ContentHeader RightItem={<p>Home</p>} LeftItem={AutoAwesomeIcon} /> */}
             <div className="status">
               <Status />
             </div>
           </div>
-          <div className="home-wrap-tweets">
+          <Link to="DetailPage" className="home-wrap-tweets">
             <Tweets />
-          </div>
-
+          </Link>
       </div>
       <div className="right">
             <Right/>

@@ -1,0 +1,17 @@
+.status{
+    .status-wrap {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .status-right{
+            // display:flex;
+            // padding-left: 8px;
+            // flex-direction: column;
+            .bt-tweet{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+        }
+    }
+}
