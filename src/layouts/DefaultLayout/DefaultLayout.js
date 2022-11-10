@@ -1,4 +1,5 @@
 import classNames from 'classnames/bind'
+import { Outlet } from 'react-router-dom'
 
 import styles from './DefaultLayout.module.scss'
 import Navbar from '../../components/home/navbar/Navbar'
@@ -12,7 +13,7 @@ const DefaultLayout = ({children}) => {
                 <Navbar />
             </div>
             <div className={cx("content")}>
-                {children}
+                <Outlet/>
             </div>
         </div>
     )
