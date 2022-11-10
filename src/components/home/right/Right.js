@@ -1,8 +1,8 @@
-import React from "react";
-import Search from "./search/Search";
-import Trending from "./Trending/Trending";
-import Suggest from "./Suggest/Suggest";
-import "./Right.scss";
+import React from "react"
+import Search from "./search/Search"
+import Trending from "./Trending/Trending"
+import Suggest from "./Suggest/Suggest"
+import "./Right.scss"
 
 export default function Right() {
   return (
@@ -16,5 +16,5 @@ export default function Right() {
 
       <Suggest />
     </div>
-  );
+  )
 }

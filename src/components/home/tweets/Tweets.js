@@ -1,22 +1,21 @@
-import React, { useEffect } from "react";
-import AvatarAuth from "./author/avatarAuthor/avatarAuth";
-import "./Tweets.scss";
-import NameAuth from "./author/nameAuthor/nameAuth";
-import TimeTweet from "./tweetTime/tweetTime";
-import Grid from "@mui/material/Grid";
-import Content from "./content/content";
-import Interaction from "./interaction/interaction";
-import Menu from "../../common/button/menu/menu";
-import { useDispatch, useSelector } from "react-redux";
-import { fetchlistTweet } from "./tweetsSlice";
-import { todoRemaningSelector } from "../../../redux/selector/selector";
+import React, { useEffect } from "react"
+import AvatarAuth from "./author/avatarAuthor/avatarAuth"
+import "./Tweets.scss"
+import NameAuth from "./author/nameAuthor/nameAuth"
+import TimeTweet from "./tweetTime/tweetTime"
+import Grid from "@mui/material/Grid"
+import Content from "./content/content"
+import Interaction from "./interaction/interaction"
+import Menu from "../../common/button/menu/menu"
+import { useDispatch, useSelector } from "react-redux"
+import { fetchlistTweet } from "./tweetsSlice"
+import { todoRemaningSelector } from "../../../redux/selector/selector"
 export default function Tweets() {
   useEffect(() => {
-    dispatch(fetchlistTweet());
-  }, []);
-  const dispatch = useDispatch();
-  const listTweet = useSelector(todoRemaningSelector);
-  console.log(listTweet);
+    dispatch(fetchlistTweet())
+  }, [])
+  const dispatch = useDispatch()
+  const listTweet = useSelector(todoRemaningSelector)
   return (
     <div className="Tweets">
       {listTweet.map((data, index) => {
@@ -43,8 +42,8 @@ export default function Tweets() {
               </div>
             </Grid>
           </Grid>
-        );
+        )
       })}
     </div>
-  );
+  )
 }

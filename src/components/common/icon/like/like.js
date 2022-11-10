@@ -1,5 +1,5 @@
-import React from 'react'
-import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
+import React from "react"
+import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder"
 export default function like() {
   return (
     <div>

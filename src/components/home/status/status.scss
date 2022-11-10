@@ -1,20 +1,23 @@
-.status{
-    .status-wrap {
-        .avatar {
-            img {
-            
-            }
+.status {
+  .status-wrap {
+    .status-right {
+      display: flex;
+      padding-left: 8px;
+      flex-direction: column;
+      .list-url {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: stretch;
+        .status-img {
+          width: 50%;
         }
-        .status-right{
-            display:flex;
-            padding-left: 8px;
-            flex-direction: column;
-            .bottom{
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                height: 60px;
-            }
-        }
+      }
+      .bottom {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 60px;
+      }
     }
+  }
 }

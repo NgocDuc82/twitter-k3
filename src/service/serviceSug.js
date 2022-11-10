@@ -1,9 +1,8 @@
 // import {dataSug } from '../Mocks/mockSuggest'
-import {dataSug } from '../mocks/mockSuggest'
-
+import { dataSug } from "../mocks/mockSuggest"
 
 export const getDataSuggest = () => {
-    return new Promise((resolve, reject) => {
-        return resolve(dataSug)
-    })
+  return new Promise((resolve, reject) => {
+    return resolve(dataSug)
+  })
 }

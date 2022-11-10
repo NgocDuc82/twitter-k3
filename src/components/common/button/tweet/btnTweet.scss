@@ -1,13 +1,13 @@
-.btnTweet{
-    button {
-        padding: 11px 21px;
-        border-radius: 20px;
-        border: none;
-        color: #fff;
-        opacity: 0.5;
-        background: #1D9bf0; 
-        &:hover {
-            opacity: 1;
-        }
+.btnTweet {
+  button {
+    padding: 11px 21px;
+    border-radius: 20px;
+    border: none;
+    color: #fff;
+    opacity: 0.5;
+    background: #1d9bf0;
+    &:hover {
+      opacity: 1;
     }
+  }
 }

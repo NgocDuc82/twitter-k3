@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react"
 
 export default function nameAuth({ data }) {
   return (
@@ -6,5 +6,5 @@ export default function nameAuth({ data }) {
       <strong>{data.authorName}</strong>
       <span>{data.authorId}</span>
     </div>
-  );
+  )
 }
