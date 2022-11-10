@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 import React, { useState, useEffect } from "react";
-=======
-import React, { useState } from "react";
->>>>>>> ab42ad08a2b373fabe6d8274b78931c8a4bf36dd
 // import {useState} from 'react';
 import Avatar from "../../common/avatar/avatar";
 import InputText from "./inputText/InputText";
@@ -47,15 +43,7 @@ export default function Status() {
         </Grid>
         <Grid item xs={10} className="status-right">
           {isMode ? <SelectViewMode /> : <> </>}
-<<<<<<< HEAD
-          <InputText
-            infoStatus={infoStatus}
-            changeInputStatus={changeInputStatus}
-            handleClinkInput={handleClinkInput}
-          />
-=======
           <InputText handleClinkInput={handleClinkInput} />
->>>>>>> ab42ad08a2b373fabe6d8274b78931c8a4bf36dd
           {isMode ? <DisplayViewMode /> : <> </>}
 
           <div className="bottom">
