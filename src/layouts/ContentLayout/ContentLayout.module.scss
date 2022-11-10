@@ -1,4 +1,4 @@
-.explore {
+.block {
     width: 100%;
     display: flex;
     &__content {
@@ -12,5 +12,6 @@
     &__sidebar--right {
         flex: 1;
         padding-top: 17px;
+        padding-left: 17px;
     }
 }

@@ -1,7 +1,7 @@
 import Avatar from '../../../common/avatar/avatar'
 import React from 'react'
 import './account.scss'
-import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
+import Menu from '../../../common/button/menu/menu';
 
 export default function account() {
   return (
@@ -17,7 +17,7 @@ export default function account() {
                 </div>
             </div>
             <div className='menu'>
-              <MoreHorizIcon/>
+              <Menu/>
             </div>
         </div>
     </div>
