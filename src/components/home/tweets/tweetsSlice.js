@@ -1,41 +1,48 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
-import { collection, getDocs } from "@firebase/firestore";
+import { collection, getDocs, setDoc, addDoc } from "@firebase/firestore";
 import { db } from "../../../firebase";
 
 const Tweets = createSlice({
   name: "FilterListTweet",
-  initialState: {status: 'idle', listTweet : []},
-  reducers: {
-  
-  },
+  initialState: { status: "idle", listTweet: [] },
+  reducers: {},
   extraReducers: (builder) => {
-    builder.addCase(fetchlistTweet.pending, (state, action) => {
-        state.status =  "loading" ;
-    }).addCase(fetchlistTweet.fulfilled, (state, action) => {
-      // console.log({action});
-        state.listTweet = action.payload  ;
+    builder
+      .addCase(fetchlistTweet.pending, (state, action) => {
+        state.status = "loading";
+      })
+      .addCase(fetchlistTweet.fulfilled, (state, action) => {
+        // console.log({action});
+        state.listTweet = action.payload;
         state.status = "idle";
-    })
+      })
+      .addCase(addNewStatus.fulfilled , (state, action) => {
+        state.listTweet.push(action.payload);
+      })
   },
 });
 
 const { reducer, actions } = Tweets;
-export const { FilterListTweet } = actions;
 export default reducer;
 
+// get api
+
 export const fetchlistTweet = createAsyncThunk("fetchlistTweet", async () => {
-  const data = await getDocs(collection(db,"tweets")) 
-  let dataList = []
-  data.forEach(el => {
-     dataList.push(el.data())
-  })
-  console.log(dataList);
-  return dataList
+  const data = await getDocs(collection(db, "tweets"));
+  let dataList = [];
+  data.forEach((el) => {
+    dataList.push(el.data());
+  });
+  return dataList;
 });
 
+// add Status
 
-// export function UpTweet(tweet) {
-//     return function UpTweetThuk(dispatch, getState) {
-//       dispatch(FilterListTweet(tweet));
-//     };
-//   }
+export const addNewStatus = createAsyncThunk(
+  "addNewStatus",
+  async (newStatus) => {
+    const collectionRef = collection(db, "tweets");
+    const PostAPI = await addDoc(collectionRef, newStatus);
+    return newStatus
+  }
+);

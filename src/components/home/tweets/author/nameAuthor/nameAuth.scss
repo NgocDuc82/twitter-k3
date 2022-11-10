@@ -1,0 +1,19 @@
+.nameAuth{
+    display:flex;
+    justify-content:flex-start;
+    align-items:center;
+    column-gap: 5px;
+    .authorName{
+        font-size: 15px;
+        font-weight: 700;
+        &:hover{
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    }
+    .authorId{
+        font-size: 14px;
+        font-weight: 400;
+        color: rgb(83, 100, 113);
+    }
+}
