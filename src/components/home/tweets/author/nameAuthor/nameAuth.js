@@ -1,10 +1,10 @@
-import React from 'react'
+import React from "react";
 
-export default function nameAuth() {
+export default function nameAuth({ data }) {
   return (
     <div className="nameAuth">
-       <strong>Terrible Maps</strong> 
-       <span>@TeribleMaps</span>
+      <strong>{data.authorName}</strong>
+      <span>{data.authorId}</span>
     </div>
-  )
+  );
 }
