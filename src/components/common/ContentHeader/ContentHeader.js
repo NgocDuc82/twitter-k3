@@ -6,9 +6,9 @@ const cx = classNames.bind(styles)
 const ContentHeader = ({ RightItem, LeftItem }) => {
     return (
         <div className={cx("header")}>
-            <RightItem />
+            {RightItem}
             <div className={cx("header__left")}>
-                <LeftItem />
+                {LeftItem}
             </div>
         </div>
     )
