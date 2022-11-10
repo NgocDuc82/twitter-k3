@@ -1,9 +1,9 @@
-import React from "react";
-import Reply from "../../../common/icon/reply/reply";
-import ReTweet from "../../../common/icon/reTweet/reTweet";
-import Like from "../../../common/icon/like/like";
-import Share from "../../../common/icon/share/share";
-import "./interaction.scss";
+import React from "react"
+import Reply from "../../../common/icon/reply/reply"
+import ReTweet from "../../../common/icon/reTweet/reTweet"
+import Like from "../../../common/icon/like/like"
+import Share from "../../../common/icon/share/share"
+import "./interaction.scss"
 export default function interaction() {
   return (
     <div className="interaction">
@@ -35,5 +35,5 @@ export default function interaction() {
         </li>
       </ul>
     </div>
-  );
+  )
 }

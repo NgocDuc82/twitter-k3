@@ -1,20 +1,19 @@
 .home {
-
   display: flex;
-    .content{
-      flex: 5;
-      .home-wrap-status {
-        padding: 0 16px;
-        margin-bottom: 20px;
-      }
-      .home-wrap-tweets {
-        padding: 0 16px;
-        &:hover {
-          background-color: #f7f9f9;
-        }
+  .content {
+    flex: 5;
+    .home-wrap-status {
+      padding: 0 16px;
+      margin-bottom: 20px;
+    }
+    .home-wrap-tweets {
+      padding: 0 16px;
+      &:hover {
+        background-color: #f7f9f9;
       }
     }
-    .right{
-      flex:3;
-    }
+  }
+  .right {
+    flex: 3;
+  }
 }

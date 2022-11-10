@@ -1,18 +1,15 @@
-import React, { useState } from "react";
-import "./Search.scss";
-import { SearchOutlined } from "@ant-design/icons";
-import { useDispatch, useSelector } from "react-redux";
-import { todoRemaningSelector } from "../../../../redux/selector/selector";
+import React, { useState } from "react"
+import "./Search.scss"
+import { SearchOutlined } from "@ant-design/icons"
+import { useSelector } from "react-redux"
+import { todoRemaningSelector } from "../../../../redux/selector/selector"
 
 export default function Search() {
-  const [dataSearch, setdataSearch] = useState();
-  const data = useSelector(todoRemaningSelector);
-
-  console.log();
-  const handleChangeSearch = (e) => {
-    setdataSearch(e.target.value);
-  };
-  console.log(dataSearch);
+  const [dataSearch, setdataSearch] = useState()
+  const data = useSelector(todoRemaningSelector)
+  const handleChangeSearch = e => {
+    setdataSearch(e.target.value)
+  }
   return (
     <div className="search-wrapper">
       <div className="search">
@@ -30,7 +27,7 @@ export default function Search() {
           <div className="search-filter">
             {dataSearch ? (
               data
-                .filter((item) => item.authorName?.includes(dataSearch))
+                .filter(item => item.authorName?.includes(dataSearch))
                 .map((data, index) => {
                   return (
                     <ul className="list-search-filter">
@@ -39,15 +36,13 @@ export default function Search() {
                           <img src={data.authorAvatar} alt="" />
                         </div>
                         <div className="info">
-                          <strong className="authorName">
-                            {data.authorName}
-                          </strong>
+                          <strong className="authorName">{data.authorName}</strong>
                           <p className="authorID">{data.authorId}</p>
                           {/* <p className="authorDecription"></p> */}
                         </div>
                       </li>
                     </ul>
-                  );
+                  )
                 })
             ) : (
               <> </>
@@ -56,5 +51,5 @@ export default function Search() {
         </div>
       </div>
     </div>
-  );
+  )
 }

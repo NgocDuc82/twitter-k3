@@ -1,11 +1,11 @@
-import React from 'react';
-import ChatBubbleOutlineIcon from '@mui/icons-material/ChatBubbleOutline';
+import React from "react"
+import ChatBubbleOutlineIcon from "@mui/icons-material/ChatBubbleOutline"
 const Reply = () => {
-    return (
-        <div>
-            <ChatBubbleOutlineIcon />
-        </div>
-    );
+  return (
+    <div>
+      <ChatBubbleOutlineIcon />
+    </div>
+  )
 }
 
-export default Reply;
+export default Reply

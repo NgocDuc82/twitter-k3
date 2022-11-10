@@ -1,18 +1,18 @@
-import React, { useState } from "react";
-import "./menu.scss";
-import SentimentVeryDissatisfiedIcon from "@mui/icons-material/SentimentVeryDissatisfied";
-import PostAddIcon from "@mui/icons-material/PostAdd";
-import VolumeOffIcon from "@mui/icons-material/VolumeOff";
-import PersonAddAltIcon from "@mui/icons-material/PersonAddAlt";
-import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
-import BlockIcon from "@mui/icons-material/Block";
-import EmojiFlagsIcon from "@mui/icons-material/EmojiFlags";
-import CodeOffIcon from "@mui/icons-material/CodeOff";
+import React, { useState } from "react"
+import "./menu.scss"
+import SentimentVeryDissatisfiedIcon from "@mui/icons-material/SentimentVeryDissatisfied"
+import PostAddIcon from "@mui/icons-material/PostAdd"
+import VolumeOffIcon from "@mui/icons-material/VolumeOff"
+import PersonAddAltIcon from "@mui/icons-material/PersonAddAlt"
+import MoreHorizIcon from "@mui/icons-material/MoreHoriz"
+import BlockIcon from "@mui/icons-material/Block"
+import EmojiFlagsIcon from "@mui/icons-material/EmojiFlags"
+import CodeOffIcon from "@mui/icons-material/CodeOff"
 export default function Menu() {
-  const [isMenu, setIsMenu] = useState(false);
+  const [isMenu, setIsMenu] = useState(false)
   const handleClinkMore = () => {
-    setIsMenu(!isMenu);
-  };
+    setIsMenu(!isMenu)
+  }
   return (
     <div className="menu">
       <div className="menu-icon" onClick={handleClinkMore}>
@@ -55,5 +55,5 @@ export default function Menu() {
         <></>
       )}
     </div>
-  );
+  )
 }

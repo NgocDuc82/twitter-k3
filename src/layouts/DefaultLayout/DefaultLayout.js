@@ -1,12 +1,12 @@
-import React from "react";
-import classNames from "classnames/bind";
-import { Outlet } from "react-router-dom";
+import React from "react"
+import classNames from "classnames/bind"
+import { Outlet } from "react-router-dom"
 
-import styles from "./DefaultLayout.module.scss";
-import Navbar from "../../components/home/navbar/navbar";
+import styles from "./DefaultLayout.module.scss"
+import Navbar from "../../components/home/navbar/navbar"
 
 const DefaultLayout = ({ children }) => {
-  const cx = classNames.bind(styles);
+  const cx = classNames.bind(styles)
 
   return (
     <div className={cx("container")}>
@@ -17,7 +17,7 @@ const DefaultLayout = ({ children }) => {
         <Outlet />
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default DefaultLayout;
+export default DefaultLayout
