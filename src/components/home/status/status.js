@@ -40,6 +40,8 @@ export default function Status() {
   const handleBtnTweet = () => {
     // dispatch 1 thuk-action
     dispatch(addNewStatus(infoStatus));
+    setIsMode(false)
+    setinfoStatus({content : ''})
   };
   return (
     <div className="status">
