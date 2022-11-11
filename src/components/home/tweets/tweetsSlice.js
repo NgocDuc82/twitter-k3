@@ -38,6 +38,7 @@ export const fetchlistTweet = createAsyncThunk("fetchlistTweet", async () => {
 // add Status
 
 export const addNewStatus = createAsyncThunk("addNewStatus", async newStatus => {
+  console.log(newStatus.photo)
   const collectionRef = collection(db, "tweets")
   await addDoc(collectionRef, newStatus)
   return newStatus

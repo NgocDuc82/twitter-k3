@@ -1,14 +1,56 @@
 .status {
   .status-wrap {
+    .avatar {
+      img {
+      }
+    }
     .status-right {
       display: flex;
       padding-left: 8px;
       flex-direction: column;
+      .Url {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+        grid-auto-flow: row;
+
+        .status-img {
+          grid-row-start: span 1;
+        }
+      }
+      .list-url {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+        grid-auto-flow: column;
+
+        .status-img {
+          grid-row-start: span 2;
+        }
+      }
       .bottom {
         display: flex;
         align-items: center;
         justify-content: space-between;
         height: 60px;
+        .selectOption {
+          .left {
+            ul {
+              display: flex;
+              padding: 0;
+              li {
+                list-style-type: none;
+                padding: 6px;
+                color: #1d9bf0;
+                &:hover {
+                  background: rgba($color: rgb(107, 187, 233), $alpha: 0.3);
+                  border-radius: 50%;
+                  // opacity:0.2;
+                }
+              }
+            }
+          }
+        }
       }
     }
   }
