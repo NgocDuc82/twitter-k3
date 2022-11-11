@@ -3,7 +3,7 @@ import React, { useState } from "react"
 import Avatar from "../../common/avatar/avatar"
 import InputText from "./inputText/inputText"
 import SelectOption from "./selectOption/selectOption"
-import BtnTweet from "../../common/button/tweet/BtnTweet"
+import BtnTweet from "../../common/button/tweet/btnTweet"
 import SelectViewMode from "./viewMode/selectViewMode"
 import "./status.scss"
 // import Paper from "@mui/material/Paper";
