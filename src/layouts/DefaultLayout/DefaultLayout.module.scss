@@ -1,0 +1,12 @@
+.container {
+  max-width: 1240px;
+  width: 100%;
+  display: flex;
+  margin: 0 auto;
+}
+.sidebar {
+  width: 263px;
+}
+.content {
+  flex: 1;
+}

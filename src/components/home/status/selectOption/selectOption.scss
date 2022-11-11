@@ -1,0 +1,18 @@
+.selectOption {
+  .left {
+    ul {
+      display: flex;
+      padding: 0;
+      li {
+        list-style-type: none;
+        padding: 6px;
+        color: #1d9bf0;
+        &:hover {
+          background: rgba($color: rgb(107, 187, 233), $alpha: 0.3);
+          border-radius: 50%;
+          // opacity:0.2;
+        }
+      }
+    }
+  }
+}

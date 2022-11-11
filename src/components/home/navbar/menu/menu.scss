@@ -1,0 +1,112 @@
+.cham {
+  list-style: none;
+  padding-left: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  .hv {
+    margin: 15px;
+    padding: 5px;
+    width: auto;
+  }
+  .div_icon {
+    display: flex;
+    // justify-content: flex-start;
+    align-items: center;
+    margin-right: auto;
+    column-gap: 20px;
+    height: 40px;
+    padding: 5px 20px 5px 10px;
+  }
+  .css-i4bv87-MuiSvgIcon-root {
+    font-size: 2em;
+  }
+  .home {
+    &:hover {
+      .div_icon {
+        background-color: rgb(224, 224, 224);
+        border-radius: 50px;
+        transition-duration: 0.2s;
+      }
+    }
+  }
+  .explore {
+    &:hover {
+      .div_icon {
+        background-color: rgb(224, 224, 224);
+        border-radius: 50px;
+        transition-duration: 0.2s;
+        width: 68%;
+      }
+    }
+  }
+  .notifications {
+    &:hover {
+      .div_icon {
+        background-color: rgb(224, 224, 224);
+        border-radius: 50px;
+        transition-duration: 0.2s;
+        width: 84%;
+      }
+    }
+  }
+  .messages {
+    &:hover {
+      .div_icon {
+        background-color: rgb(224, 224, 224);
+        border-radius: 50px;
+        transition-duration: 0.2s;
+        width: 76%;
+      }
+    }
+  }
+  .bookmarks {
+    &:hover {
+      .div_icon {
+        background-color: rgb(224, 224, 224);
+        border-radius: 50px;
+        transition-duration: 0.2s;
+        width: 80%;
+      }
+    }
+  }
+  .lists {
+    &:hover {
+      .div_icon {
+        background-color: rgb(224, 224, 224);
+        border-radius: 50px;
+        transition-duration: 0.2s;
+        width: 54%;
+      }
+    }
+  }
+  .profile {
+    &:hover {
+      .div_icon {
+        background-color: rgb(224, 224, 224);
+        border-radius: 50px;
+        transition-duration: 0.2s;
+        width: 60%;
+      }
+    }
+  }
+  .more {
+    &:hover {
+      .div_icon {
+        background-color: rgb(224, 224, 224);
+        border-radius: 50px;
+        transition-duration: 0.2s;
+        width: 54%;
+      }
+    }
+  }
+  .icon {
+    width: 30px;
+  }
+  .text {
+    font-weight: 600;
+    font-size: 20px;
+  }
+  .text1 {
+    font-size: 20px;
+  }
+}

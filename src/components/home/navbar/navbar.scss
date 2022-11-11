@@ -1,0 +1,28 @@
+.fl {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  position: fixed;
+  width: 263px;
+  margin-top: 3px;
+  .btnTweet {
+    button {
+      padding: 11px 21px;
+      border-radius: 50px;
+      border: none;
+      width: 90%;
+      opacity: 1;
+      height: 50px;
+      margin-left: 5%;
+      margin-right: 5%;
+      color: #fff;
+      background: #1d9bf0;
+      font-size: 18px;
+      font-weight: 700;
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+}

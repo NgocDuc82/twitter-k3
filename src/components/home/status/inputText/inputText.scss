@@ -1,0 +1,18 @@
+.inputText {
+  margin: 24px 0;
+  display: flex;
+  text-align: center;
+  input {
+    background-color: #fff;
+    border: none;
+    height: 22px;
+    // width: 100%;
+    text-align: left;
+    font-size: 22px;
+    outline: none;
+    &::placeholder {
+      font-size: 22px;
+      color: rgba(83, 100, 113, 1);
+    }
+  }
+}
