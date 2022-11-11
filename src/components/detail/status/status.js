@@ -1,19 +1,19 @@
-import React, { useState } from "react";
+import React, { useState } from "react"
 // import {useState} from 'react';
-import Avatar from "../../common/avatar/avatar";
-import InputText from "./inputText/inputText";
-import SelectOption from "./selectOption/selectOption";
-import BtnTweet from "../../common/button/tweet/BtnTweet";
-import SelectViewMode from "./viewMode/selectViewMode";
-import "./status.scss";
+import Avatar from "../../common/avatar/avatar"
+import InputText from "./inputText/inputText"
+import SelectOption from "./selectOption/selectOption"
+import BtnTweet from "../../common/button/tweet/BtnTweet"
+import SelectViewMode from "./viewMode/selectViewMode"
+import "./status.scss"
 // import Paper from "@mui/material/Paper";
-import Grid from "@mui/material/Grid";
+import Grid from "@mui/material/Grid"
 export default function Status() {
-  const [isMode, setIsMode] = useState(false);
+  const [isMode, setIsMode] = useState(false)
 
   const handleClinkInput = () => {
-    setIsMode(true);
-  };
+    setIsMode(true)
+  }
 
   return (
     <div className="status">
@@ -31,7 +31,7 @@ export default function Status() {
         </Grid>
       </Grid>
     </div>
-  );
+  )
 }
 
 // export default status ;

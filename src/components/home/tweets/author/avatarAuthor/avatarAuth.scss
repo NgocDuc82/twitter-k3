@@ -1,12 +1,12 @@
-.Avatar{
-    .Avatar-img {
-        border-radius: 50%;
-        // width: 100%;
-        width: 60%;
-        margin-left: 12px;
-        &:hover{
-            background: white;
-            opacity: 1;
-        }
+.Avatar {
+  .Avatar-img {
+    border-radius: 50%;
+    // width: 100%;
+    width: 60%;
+    margin-left: 12px;
+    &:hover {
+      background: white;
+      opacity: 1;
     }
+  }
 }

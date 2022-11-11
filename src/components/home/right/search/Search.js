@@ -1,34 +1,52 @@
-import React , {useState} from 'react'
-import'./Search.scss'
-import SearchIcon from '@mui/icons-material/Search';
-
+import React, { useState } from "react"
+import "./Search.scss"
+import { SearchOutlined } from "@ant-design/icons"
+import { useSelector } from "react-redux"
+import { todoRemaningSelector } from "../../../../redux/selector/selector"
 
 export default function Search() {
-  const [dataSearch, setDataSearch] = useState(" ")
-  let searchDes = document.getElementById('search-description')
-  let input = document.getElementById('searchInput')
-  const handleChangeSearch = (e) =>{
-    searchDes.style.backgroundColor='#000';
-    input.style.backgroundColor='#000';
-    let value = e.target.value;
-    setDataSearch(value)
+  const [dataSearch, setdataSearch] = useState()
+  const data = useSelector(todoRemaningSelector)
+  const handleChangeSearch = e => {
+    setdataSearch(e.target.value)
   }
   return (
-     <div className="search">
-      <div className="search-wrap">
-        <div className="search-description" id="search-description">  
+    <div className="search-wrapper">
+      <div className="search">
+        <div className="search-input">
+          <input
+            type="text"
+            className="inputSearch"
+            placeholder="Search Twitter"
+            value={dataSearch}
+            onChange={handleChangeSearch}
+          />
           <div className="search-button">
-            <SearchIcon id="search-btn" />
+            <SearchOutlined id="search-btn" />
           </div>
-          <div className="search-input">
-            <input 
-                type="text" 
-                className="search"
-                placeholder='Search Twitter' 
-                id="searchInput"
-                // value ={dataSearch}
-                onChange={e => handleChangeSearch(e)}
-              />
+          <div className="search-filter">
+            {dataSearch ? (
+              data
+                .filter(item => item.authorName?.includes(dataSearch))
+                .map((data, index) => {
+                  return (
+                    <ul className="list-search-filter">
+                      <li className="item-search-filter">
+                        <div className="avatar-search-filter">
+                          <img src={data.authorAvatar} alt="" />
+                        </div>
+                        <div className="info">
+                          <strong className="authorName">{data.authorName}</strong>
+                          <p className="authorID">{data.authorId}</p>
+                          {/* <p className="authorDecription"></p> */}
+                        </div>
+                      </li>
+                    </ul>
+                  )
+                })
+            ) : (
+              <> </>
+            )}
           </div>
         </div>
       </div>

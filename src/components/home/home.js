@@ -1,25 +1,36 @@
-import "./home.scss";
-import { Link } from "react-router-dom";
-import Status from "./status/status";
-import Tweets from "./tweets/Tweets";
-import Right from "./right/Right";
+import "./home.scss"
+import Status from "./status/status"
+import Tweets from "./tweets/Tweets"
+import Right from "./right/Right"
+import ContentLayout from "../../layouts/ContentLayout/ContentLayout"
 
 const Home = () => {
+  const Content = (
+    <>
+      <div className="home-wrap-status">
+        <Status />
+      </div>
+      <div className="home-wrap-tweets">
+        <Tweets />
+      </div>
+    </>
+  )
+  const Sidebar = (
+    <>
+      <Right />
+    </>
+  )
   return (
-    <div className="home">
-      <div className="content">
-        <div className="home-wrap-status">
-          <Status />
-        </div>
-        <div className="home-wrap-tweets">
-          <Tweets />
-        </div>
-      </div>
-      <div className="right">
-        <Right />
-      </div>
-    </div>
-  );
-};
+    <>
+      <ContentLayout content={Content} sideBar={Sidebar} />
+    </>
+  )
+  // return (
+  //   <div className="home">
+  //     <div className="content"></div>
+  //     <div className="right"></div>
+  //   </div>
+  // );
+}
 
-export default Home;
+export default Home

@@ -1,10 +1,10 @@
-import ContainerHome from '../../components/home/home'
+import ContainerHome from "../../components/home/home"
 const Home = () => {
-    return (
-        <div>
-           <ContainerHome />
-        </div>
-    )
+  return (
+    <div>
+      <ContainerHome />
+    </div>
+  )
 }
 
-export default Home;
+export default Home
