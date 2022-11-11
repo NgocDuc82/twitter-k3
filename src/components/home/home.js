@@ -1,4 +1,5 @@
 import "./home.scss";
+import { Link } from "react-router-dom";
 import Status from "./status/status";
 import Tweets from "./tweets/Tweets";
 import Right from "./right/Right";
