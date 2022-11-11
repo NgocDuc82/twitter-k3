@@ -1,5 +1,5 @@
 import React from "react"
-import { useEffect, useState } from "react"
+import { useEffect, useState, useRef } from "react"
 import "./Suggest.scss"
 import { getDataSuggest } from "../../../../service/serviceSug"
 import Modal from "@mui/material/Modal"
@@ -21,19 +21,28 @@ const style = {
   pb: 3
 }
 const ButtonStyleUnfollow = {
+  marginLeft: "auto",
+  marginRight: "auto",
   backgroundColor: "#000",
   color: "#fff",
   width: "230px",
+  border: "1px solid #000",
   height: "40px",
   borderRadius: "25px",
   marginBottom: "10px",
+  fontWeight: "600",
+  textTransform: "capitalize",
   "&:hover": {
-    backgroundColor: "#ccc",
-    color: "#000"
+    backgroundColor: "rgb(61, 59, 59)",
+    color: "#fff"
   }
 }
 
 const btnStyleCancel = {
+  marginLeft: "auto",
+  marginRight: "auto",
+  fontWeight: "600",
+  textTransform: "capitalize",
   color: "#000",
   width: "230px",
   height: "40px",
@@ -119,7 +128,7 @@ export default function Suggest() {
                     <p className="Suggest-tagname">{sug.sugTagName}</p>
                   </div>
                   {sug.sugBoolean === false ? (
-                    <div className="follow">
+                    <div className={sug.checkHover ? "follow" : "follow1"}>
                       <Button size="medium" className="btn-follow" onClick={e => handleButtonFollow(index, sug)}>
                         follow
                       </Button>
@@ -140,12 +149,7 @@ export default function Suggest() {
                       <Box sx={{ ...style, width: 320, height: 300 }}>
                         <h1
                           className="unfollow-title"
-                          style={{
-                            fontWeight: "bold",
-                            fontSize: "25px",
-                            marginBottom: "10px",
-                            marginTop: "20px"
-                          }}
+                          style={{ fontWeight: "600", fontSize: "25px", marginBottom: "10px", marginTop: "20px" }}
                         >
                           Unfollow {data.sugTagName}
                         </h1>
@@ -171,6 +175,11 @@ export default function Suggest() {
                   }
                 </div>
               </div>
+
+              // </Modal>
+              //       }
+              //     </div>
+              //   </div>
             )
           })}
 

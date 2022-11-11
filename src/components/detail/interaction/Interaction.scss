@@ -1,0 +1,90 @@
+.interaction2{
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    margin-left: 15px;
+    border-top : 1px solid rgb(239, 243, 244);
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    .item{
+        display: flex;
+        align-items: center;
+        column-gap: 4px;
+        cursor: pointer;
+        &:hover{
+            text-decoration: underline;
+        }
+        .numbe{
+            font-size: 15px;
+            font-weight: 700;
+        }
+        .text{
+            font-size: 15px;
+            font-weight: 400;
+            color: rgb(83, 100, 113);
+        }
+    }
+}
+.interaction-list1 {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    border-top: 1px solid rgb(239, 243, 244);
+    padding-top: 20px;
+    padding-bottom: 10px;
+    .interaction-item {
+      display: flex;
+      text-align: center;
+
+      align-items: center;
+
+      color: rgb(83, 100, 113);
+      .icon {
+        // margin-top: 4px;
+        padding: 8px 8px 4px 8px;
+        // text-align: center;
+      }
+      svg {
+        font-size: 24px;
+      }
+    }
+    .Reply {
+      &:hover {
+        color: rgb(29, 155, 240);
+        .icon {
+          background: rgba(29, 155, 240, 0.1);
+          border-radius: 50%;
+        }
+      }
+    }
+    .ReTweet {
+      &:hover {
+        color: rgb(0, 186, 124);
+        .icon {
+          background: rgba(0, 186, 124, 0.1);
+          border-radius: 50%;
+        }
+      }
+    }
+    .Like {
+      &:hover {
+        color: rgb(249, 24, 128);
+        .icon {
+          background: rgba(249, 24, 128, 0.1);
+          border-radius: 50%;
+        }
+      }
+    }
+    .Share {
+      &:hover {
+        color: rgb(29, 155, 240);
+        .icon {
+          background: rgba(29, 155, 240, 0.1);
+          border-radius: 50%;
+        }
+      }
+    }
+  }

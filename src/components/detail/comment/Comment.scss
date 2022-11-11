@@ -1,0 +1,42 @@
+.comment{
+    display: flex;
+    .avatar{
+        width: 80px;
+    }
+    .commnet-right{
+        margin-top: 10px;
+        margin-left: 5px;
+        .name{
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            .name1{
+                font-size: 16px;
+                font-weight: 700;
+            }
+            .name2{
+                font-size: 16px;
+                font-weight: 400;
+                color: rgb(83, 100, 113);
+            }
+        }
+        .text{
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            .text1{
+                font-size: 15px;
+                font-weight: 400;
+                color: rgb(83, 100, 113);
+            }
+            .text2{
+                font-size: 16px;
+                font-weight: 400;
+                color:rgb(29, 155, 240);
+            }
+        }
+        .contet{
+            margin-bottom: 10px;
+        }
+    }
+}

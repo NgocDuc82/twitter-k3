@@ -6,47 +6,44 @@ import BookmarkBorderIcon from "@mui/icons-material/BookmarkBorder"
 import ListAltIcon from "@mui/icons-material/ListAlt"
 import PermIdentityIcon from "@mui/icons-material/PermIdentity"
 import MoreHorizIcon from "@mui/icons-material/MoreHoriz"
-;<svg
-  xmlns="http://www.w3.org/2000/svg"
-  fill="none"
-  viewBox="0 0 24 24"
-  stroke-width="1.5"
-  stroke="currentColor"
-  class="w-6 h-6"
->
-  <path
-    stroke-linecap="round"
-    stroke-linejoin="round"
-    d="M6.75 12a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM12.75 12a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM18.75 12a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"
-  />
-</svg>
+import { Link } from "react-router-dom"
+
 export default function menu() {
+  const navLinkStyle = { color: "black" }
   return (
     <div>
       <ul className="cham">
         <li className="hv">
-          <a className="home">
+          <Link to="/" className="home">
             <div className="div_icon">
-              <svg viewBox="0 0 24 24" aria-hidden="true" class="icon">
+              <svg
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+                class="icon r-18jsvk2 r-4qtqp9 r-yyyyoo r-lwhw9o r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-cnnz9e"
+              >
                 <g>
-                  <path d="M12 1.696L.622 8.807l1.06 1.696L3 9.679V19.5C3 20.881 4.119 22 5.5 22h13c1.381 0 2.5-1.119 2.5-2.5V9.679l1.318.824 1.06-1.696L12 1.696zM12 16.5c-1.933 0-3.5-1.567-3.5-3.5s1.567-3.5 3.5-3.5 3.5 1.567 3.5 3.5-1.567 3.5-3.5 3.5z"></path>
+                  <path d="M12 9c-2.209 0-4 1.791-4 4s1.791 4 4 4 4-1.791 4-4-1.791-4-4-4zm0 6c-1.105 0-2-.895-2-2s.895-2 2-2 2 .895 2 2-.895 2-2 2zm0-13.304L.622 8.807l1.06 1.696L3 9.679V19.5C3 20.881 4.119 22 5.5 22h13c1.381 0 2.5-1.119 2.5-2.5V9.679l1.318.824 1.06-1.696L12 1.696zM19 19.5c0 .276-.224.5-.5.5h-13c-.276 0-.5-.224-.5-.5V8.429l7-4.375 7 4.375V19.5z"></path>
                 </g>
               </svg>
-              <p className="text">Home</p>
+              <div style={navLinkStyle} className="text1">
+                Home
+              </div>
             </div>
-          </a>
+          </Link>
         </li>
         <li className="hv">
-          <a className="explore">
+          <Link to="/explore" className="explore">
             <div className="div_icon">
               <svg viewBox="0 0 24 24" aria-hidden="true" class="icon">
                 <g>
                   <path d="M10.09 3.098L9.72 7h5.99l.39-4.089 1.99.187L17.72 7h3.78v2h-3.97l-.56 6h3.53v2h-3.72l-.38 4.089-1.99-.187.36-3.902H8.78l-.38 4.089-1.99-.187L6.77 17H2.5v-2h4.46l.56-6H3.5V7h4.21l.39-4.089 1.99.187zM14.96 15l.56-6H9.53l-.56 6h5.99z"></path>
                 </g>
               </svg>
-              <p className="text1">Explore</p>
+              <div style={navLinkStyle} className="text1">
+                Explore
+              </div>
             </div>
-          </a>
+          </Link>
         </li>
         <li className="hv">
           <a className="notifications">

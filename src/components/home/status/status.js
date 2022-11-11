@@ -72,7 +72,7 @@ import React, { useState } from "react"
 import Avatar from "../../common/avatar/avatar"
 import InputText from "./inputText/inputText"
 import SelectOption from "./selectOption/selectOption"
-import BtnTweet from "../../common/button/tweet/btnTweet"
+import BtnTweet from "../../common/button/tweet/BtnTweet"
 import SelectViewMode from "./viewMode/selectViewMode/selectViewMode"
 import DisplayViewMode from "./viewMode/displayViewMode/displayViewMode"
 
