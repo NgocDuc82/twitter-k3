@@ -1,6 +1,6 @@
 import { initializeApp } from "firebase/app"
 import { getFirestore } from "firebase/firestore"
-
+import { getDownloadURL, getStorage, ref, uploadBytes } from "firebase/storage"
 const firebaseConfig = {
   apiKey: "AIzaSyAYvfdI3NkkhG-pg0QZQUXvId3dt5-0IZU",
   authDomain: "twitter-k3.firebaseapp.com",
@@ -16,3 +16,13 @@ const app = initializeApp(firebaseConfig)
 export const db = getFirestore(app)
 
 export default getFirestore()
+
+export const upLoadImg = async (file, id) => {
+  const storage = getStorage(app)
+  const storageRef = ref(storage, id)
+  await uploadBytes(storageRef, file)
+  const url = await getDownloadURL(storageRef)
+  return url
+}
+
+// upLoadImg()
